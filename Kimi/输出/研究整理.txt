@@ -1,0 +1,25 @@
+Kimi  近半年发言习惯
+范围：2026-05-02 至 2026-11-02
+近期材料多谈任务效果，尚不足以归纳代表词句。
+
+本轮暂不列代表词汇或句式。已读近期资料和未采用理由见源材料/网络来源索引.txt。
+
+本轮近期来源（未列为主表依据的只保留为背景/待验证）
+
+KIMR-S01 Kimi K3 使用交流，第22帖
+2026-08-30 | LINUX DO / jianhenghu
+https://linux.do/t/topic/2830358?page=2
+是否主表依据：否
+单个简短评价，未提供对应句式；同帖有自然好读的正面评价。
+
+KIMR-S02 Kimi K3.1 初测
+2026-10-23 | LINUX DO / LanceYang
+https://linux.do/t/topic/3067128
+是否主表依据：否
+主要是任务结果对比，不能从能力评价推导惯用词句。
+
+KIMR-S03 Kimi K2.6 的结构化输出重复问题
+2026-09-28 | GitHub / kuan27285
+https://github.com/vllm-project/vllm-ascend/issues/17621
+是否主表依据：否
+json_schema约束及特定推理环境下的故障；不等于日常聊天习惯。

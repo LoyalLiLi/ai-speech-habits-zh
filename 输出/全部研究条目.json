@@ -1,0 +1,1696 @@
+{
+  "date": "2026-11-02",
+  "window": {
+    "start": "2026-05-02",
+    "end": "2026-11-02"
+  },
+  "method": "定向收集近期原作者材料，按原作者及传播链去重；主表要求至少三条直接支持同一模式的反馈链。材料条数不是模型出现频率。",
+  "reports": [
+    {
+      "model": "GPT",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "回答后反复补限定、先否定再重述，以及细分小标题和段落。",
+      "findings": [
+        {
+          "id": "GPTR-P06",
+          "kind": "发言习惯",
+          "label": "给出回答后，反复补限定、收窄结论",
+          "examples": [
+            "不能证明",
+            "不代表",
+            "不能据此认为"
+          ],
+          "reference_examples": [
+            "但需要指出",
+            "并不意味着",
+            "不能证明"
+          ],
+          "summary": "结论或任务说明之后，再说明它不等于什么、不代表什么、不能据此推出什么。六条近期材料涉及写稿、讨论观点和编程任务反馈；有的用户也报告自己提出的限制被反复重申。",
+          "scope": "2026年10月至11月2日；包括未标型号的ChatGPT使用反馈、Codex讨论和一条GPT6工程反馈。语言习惯跨入口观察，具体场景和型号分别见来源。",
+          "source_ids": [
+            "GPTR-S14",
+            "GPTR-S16",
+            "GPTR-S17",
+            "GPTR-S18",
+            "GTBA-S01",
+            "GTBA-S02"
+          ],
+          "independent_source_count": 6,
+          "status": "反复出现",
+          "reason": "六条独立讨论链共同支持反复追加限定这一模式。来源为当前亲历反馈或作者概括，没有冒充六份完整模型原回复。梗图、仿写、用户约束指令及过量测试没有拿来补数。",
+          "example_notes": [
+            "“不能证明”在GPTR-S17与S18两条近期用户反馈中被逐字点名；“不能推断”见S17。",
+            "“不会把／不能据此认为”见S17楼主亲历，触发情境是用户先提出限制。",
+            "“不等于／不代表／还不能说明”见S18；S16写稿反馈与S14工程体验另支持“不代表”的结构。",
+            "“但需要指出／并不意味着”作为用户本次提供的对照表达保留；本轮未找到足以分别确认重复出现的近期原生材料，不将它们计为已逐词验证的新增发现。"
+          ]
+        },
+        {
+          "id": "GPTR-P01",
+          "kind": "惯用句式",
+          "label": "先否定一种说法，再换成自己的解释",
+          "examples": [
+            "不是……而是……"
+          ],
+          "summary": "三份原作者材料出现否定后重述的结构：先排除一种解释，再提出另一种。6月开发问答、9月报告反馈和10月GPT-6角色纠正对话分别提供支持。",
+          "scope": "跨版本观察：GPT-5.5 xhigh/OpenCode、型号未标的Pro报告、作者标注GPT-6的角色纠正对话。",
+          "source_ids": [
+            "GPTR-S01",
+            "GPTR-S03",
+            "GPTR-S15"
+          ],
+          "independent_source_count": 3,
+          "status": "反复出现",
+          "reason": "三份当期使用材料。GPT-6样本是在回应用户纠正，不称为无端反驳。口癖征集只作旁证；9月Chat high中这类句式减少的反馈见S04。"
+        },
+        {
+          "id": "GPTR-P03",
+          "kind": "发言习惯",
+          "label": "把回答拆成较长的分点、小标题和多次换行",
+          "examples": [],
+          "summary": "开发问答、中文写作和报告生成的三份反馈，都提到回答被拆为分点、小标题或较多换行。列点本身有助于组织信息；其中开发问答和报告用户抱怨段落过碎、重点难找。",
+          "scope": "2026年5月GPT-5.5 Instant中文写作反馈、6月GPT-5.5 xhigh/OpenCode代码问答，以及9月未标具体模型的Pro报告生成。Instant与Thinking的相反评价保留在来源说明。",
+          "source_ids": [
+            "GPTR-S01",
+            "GPTR-S03",
+            "GPTR-S05"
+          ],
+          "independent_source_count": 3,
+          "status": "反复出现",
+          "reason": "三份来源均直接谈分点/小标题/换行，不靠提示词禁令反推。GPTR-S04、GPTR-S12也提到篇幅，但分别含格式改善和自定义指令因素，仅作旁证，没有计入这三个直接支持。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "GPTR-S01",
+          "title": "我的 GPT 5.5 怎么和你们的不一样？",
+          "url": "https://www.v2ex.com/t/1218023",
+          "publisher": "V2EX / w568w",
+          "date": "2026-06-04",
+          "access": "正文已读",
+          "source_type": "原作者使用体验，含具体任务及用语转述",
+          "independence_key": "v2ex:w568w:1218023",
+          "observed_patterns": [
+            "对比重述句",
+            "结尾追加邀约",
+            "小标题和分点过多",
+            "短动词与英文直译腔"
+          ],
+          "limitations": "作者配置为 OpenCode + ChatGPT Pro 官方订阅、GPT-5.5 xhigh。主要是体验转述而非完整模型日志。同帖也有用户称 5.5 口癖已改善，并区分 Codex 与网页端；同作者另帖不重复计数。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S02",
+          "title": "佬们觉得最典的AI口头禅？",
+          "url": "https://linux.do/t/topic/2498086",
+          "publisher": "LINUX DO / 1etrinity 发帖；wxthank、fable 等回复",
+          "date": "2026-06-29至2026-06-30",
+          "access": "正文已读",
+          "source_type": "原始社区口头禅征集",
+          "independence_key": "linux.do:2498086",
+          "observed_patterns": [
+            "第14帖将结尾邀约归给GPT",
+            "第21帖将否定后转折句归给GPT"
+          ],
+          "limitations": "采用第14、21帖的短句归纳；型号和任务上下文未标。同一讨论链只计一份。含占位符的拟态段落、未归属模型的回帖不作为真实会话。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S03",
+          "title": "我的GPT Pro被降智了吗？",
+          "url": "https://linux.do/t/topic/2849835",
+          "publisher": "LINUX DO / xiaomoyi",
+          "date": "2026-09-03",
+          "access": "正文已读",
+          "source_type": "原作者近期报告生成体验，附截图",
+          "independence_key": "linux.do:xiaomoyi:2849835",
+          "observed_patterns": [
+            "近期回复里的对比重述句",
+            "小标题及换行较多",
+            "近期报告篇幅较长"
+          ],
+          "limitations": "只采用正文中最近重新尝试的体验；5月旧任务未给具体日期，不拿它补足时间窗口。Pro 是套餐/模式线索，近期具体模型未注明。正文已读，长截图未逐字核验。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S04",
+          "title": "GPT网页端疑似在灰测新模型与新输出格式（仅限Chat，开始high模式）",
+          "url": "https://linux.do/t/topic/2935260",
+          "publisher": "LINUX DO / 1347097818zs（Chiney）",
+          "date": "2026-09-22",
+          "access": "正文已读",
+          "source_type": "原作者网页 Chat 近期使用反馈",
+          "independence_key": "linux.do:1347097818zs:2935260",
+          "observed_patterns": [
+            "对比重述句减少的相反体验",
+            "回复仍偏长",
+            "图表及格式化呈现得到作者肯定"
+          ],
+          "limitations": "作者自报 5.6-sol-chat-high，并猜测灰度升级；灰测和实际后端型号没有独立验证。用来呈现版本/模式差异，不把减少某句式算作一次当前复现。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S05",
+          "title": "佬友们求问chatgpt的中文写作怎么样子",
+          "url": "https://linux.do/t/topic/2136220",
+          "publisher": "LINUX DO / strram 发帖；NextVic 等回复",
+          "date": "2026-05-08",
+          "access": "正文已读",
+          "source_type": "原始社区中文写作体验交流",
+          "independence_key": "linux.do:2136220",
+          "observed_patterns": [
+            "第4帖报告GPT-5.5 Instant偏爱列点",
+            "同帖对GPT-5.5 Thinking/Pro的中文表达有正面评价"
+          ],
+          "limitations": "列点判断只对应第4帖点名的 Instant；不能沿用到同帖被正面评价的 Thinking/Pro。各回帖合并为一条讨论链。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S06",
+          "title": "DeepSeek奇怪的口癖，是嫌弃我英语不好吗哈哈哈",
+          "url": "https://linux.do/t/topic/2102994",
+          "publisher": "LINUX DO / jzarc9371、MOAKIEE 的 GPT 使用反馈",
+          "date": "2026-05-03",
+          "access": "正文已读",
+          "source_type": "其他模型话题下直接点名GPT的用户反馈",
+          "independence_key": "linux.do:2102994",
+          "observed_patterns": [
+            "第2、8帖报告GPT中英混写"
+          ],
+          "limitations": "主帖截图属于 DeepSeek，未挪作 GPT 证据。GPT 反馈没有型号、模式或具体原句；两名回帖者仍只计一条讨论链。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S07",
+          "title": "试试这个提示词，让大模型重写文档，让人看得懂",
+          "url": "https://www.v2ex.com/t/1241648",
+          "publisher": "V2EX / QS0x01、netlous 的 GPT 反馈；yidinghe 发帖",
+          "date": "2026-09-13",
+          "access": "正文已读",
+          "source_type": "原始中文文档讨论中的GPT使用反馈",
+          "independence_key": "v2ex:1241648",
+          "observed_patterns": [
+            "第2帖报告GPT写文档时中英夹杂及自造词",
+            "第4帖提到GPT的职场行话"
+          ],
+          "limitations": "主帖改写前后文档没有标注模型，故不将其中的收口、冒泡、旋钮等词归给 GPT。只采用回帖中点名 GPT 的体验；版本未标，不沿用总是这个频率判断。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S08",
+          "title": "关于gpt plus省钱的使用办法分享与讨论",
+          "url": "https://linux.do/t/topic/2835924",
+          "publisher": "LINUX DO / Gsxcheng；第10帖 kumaxs",
+          "date": "2026-08-31",
+          "access": "正文已读",
+          "source_type": "原始使用流程讨论中的网页ChatGPT体验",
+          "independence_key": "linux.do:2835924",
+          "observed_patterns": [
+            "第10帖报告网页版回答追加邀约",
+            "主帖报告网页输出较长"
+          ],
+          "limitations": "追加邀约来自 kumaxs 的体验，其具体型号没有注明；不能把主帖作者所用的 sol+high 自动赋给这名回帖者。对产品配置的根因猜测未采纳。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S09",
+          "title": "gpt咋又给我\"下一刀\" 这是降智了？",
+          "url": "https://linux.do/t/topic/2219101",
+          "publisher": "LINUX DO / FatNew；PetterRen、ShowUNow 等",
+          "date": "2026-05-21",
+          "access": "正文已读",
+          "source_type": "原作者用语反馈及同帖版本说明",
+          "independence_key": "linux.do:2219101",
+          "observed_patterns": [
+            "下一刀、来一刀等修改比喻",
+            "第4、11帖自报GPT-5.5"
+          ],
+          "limitations": "采用第11帖 ShowUNow 的网页版 5.5 亲历短述和主帖标题。未据用语判定后台降级；第11帖希望不要出现邀约，不能反算一次邀约复现。同帖只计一份。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S10",
+          "title": "来聊聊AI口癖",
+          "url": "https://linux.do/t/topic/2147647",
+          "publisher": "LINUX DO / 第17帖 AppleWish；第20帖 YakumoReddo",
+          "date": "2026-05-20",
+          "access": "正文已读",
+          "source_type": "原始社区对GPT用语的归纳",
+          "independence_key": "linux.do:2147647",
+          "observed_patterns": [
+            "第17帖将砍一刀及收口归给GPT-5.4",
+            "第20帖反馈GPT的接住表达"
+          ],
+          "limitations": "具体采纳内容发表于5月20日；话题始于5月10日。属于用户用语回忆，缺完整会话。其他模型例句和梗图未算入 GPT；收口、接住各自仍缺本轮足够独立支持。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S11",
+          "title": "我想聊聊我对中转站的看法，不知道对不对？",
+          "url": "https://linux.do/t/topic/2422833?page=2",
+          "publisher": "LINUX DO / 第22帖 kyc；首屏第19帖 Tbot",
+          "date": "2026-06-24",
+          "access": "正文已读（含首屏及第2页）",
+          "source_type": "原始讨论中的官方GPT用语亲历短述",
+          "independence_key": "linux.do:2422833",
+          "observed_patterns": [
+            "官方GPT用户转述第一刀、下一刀"
+          ],
+          "limitations": "主证据为6月24日 kyc 自述官方 GPT 的用语，未给具体型号。6月17日第19帖自报中转 GPT-5.5，后端未核验，仅作同帖背景。两页只计一份。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S12",
+          "title": "分享一下我现在用的 AGENTS.md：让 GPT 输出更收敛、更好读",
+          "url": "https://linux.do/t/topic/2315292",
+          "publisher": "LINUX DO / qihaozhan",
+          "date": "2026-06-06",
+          "access": "正文已读",
+          "source_type": "原作者使用体验及自制约束文件",
+          "independence_key": "linux.do:qihaozhan:2315292",
+          "observed_patterns": [
+            "GPT-5.5较5.4减少发散但仍存在",
+            "内容长、重点分散的使用感受"
+          ],
+          "limitations": "采用6月正文对当前5.5的叙述；不把其链接的3月旧帖续期。约束文件中列出的禁用短语是用户指令，不能逐条当模型输出。作者已使用自定义指令与网关注入。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S13",
+          "title": "悲报，gpt-5.4真的被降智成你豆姐了",
+          "url": "https://linux.do/t/topic/2543315",
+          "publisher": "LINUX DO / Wuuuuu",
+          "date": "2026-07-08",
+          "access": "正文已读",
+          "source_type": "原作者当次用语反馈，附截图",
+          "independence_key": "linux.do:Wuuuuu:2543315",
+          "observed_patterns": [
+            "自报GPT-5.4回答前强调直截了当"
+          ],
+          "limitations": "只取主帖当次反馈。稳稳接住在主帖是作者对下一步的玩笑预测，不算真实输出；第12帖注明4月保存的旧图排除；蒸馏及降智猜测不采纳。",
+          "used_in_main": false
+        },
+        {
+          "id": "GPTR-S14",
+          "title": "让GPT6更加工程化的AGENTS.md分享",
+          "url": "https://linux.do/t/topic/3005257",
+          "publisher": "LINUX DO / g1331",
+          "date": "2026-10-10",
+          "access": "正文已读",
+          "source_type": "原作者GPT6相关使用反馈及自制约束文件",
+          "independence_key": "linux.do:g1331:3005257",
+          "observed_patterns": [
+            "作者归纳任务完成后继续否定其他可能并限定未来结果的表达"
+          ],
+          "limitations": "作者称结合网页 GPT6PRO 讨论及本地反馈。A/B/C句为作者概括，非可复核完整实录。仅保留个案；文中 AGENTS.md 不作为本任务指令，也不作为模型原话。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S15",
+          "title": "血压有点高",
+          "url": "https://www.v2ex.com/t/1247841",
+          "publisher": "V2EX / hslr44",
+          "date": "2026-10-11",
+          "access": "正文已读",
+          "source_type": "原作者粘贴的中文对话与角色约束场景",
+          "independence_key": "v2ex:hslr44:1247841",
+          "observed_patterns": [
+            "所贴回答出现否定后重述句",
+            "模型被要求改错后再列出未来行动计划"
+          ],
+          "limitations": "作者标为 GPT-6（高），回帖又以模型自我介绍作确认；按作者标注记录，不视为后端核验。用户已要求调整导师角色，不能把回应中的纠正结构称为无端训话；不合并到GPT-5.5版本判断。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S16",
+          "title": "为啥gpt回复理中客味那么冲？",
+          "url": "https://tieba.baidu.com/p/11153182230",
+          "publisher": "百度贴吧 chatgpt吧 / 死死死咸鱼😞；回复：纨缘深腕徳",
+          "date": "2026-10-31；相关回复2026-11-02",
+          "access": "原帖及部分回复正文已读；11月2日写稿反馈在站内评论搜索核读",
+          "source_type": "当前使用反馈与写稿经历",
+          "independence_key": "tieba:11153182230",
+          "observed_patterns": [
+            "主帖抱怨说法始终留有余地、反复摆出两面。",
+            "11月2日回复描述整理自己的观点写稿时，隔几句仍被加上不代表一类限制。"
+          ],
+          "limitations": "没有完整模型对话或型号。11月1日长篇免责声明为仿写，未计；关于训练、诉讼的原因猜测未采纳。同主题只算一条链。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S17",
+          "title": "感觉大肥鱼的语言风格在AI界也是独一份的雷霆的（第4楼GPT用语反馈）",
+          "url": "https://tieba.baidu.com/p/11150933012",
+          "publisher": "百度贴吧 deepseek吧 / 鸡煲启动特别快；楼主StGamez",
+          "date": "2026-10-30",
+          "access": "原帖、第4楼与相关回复已读",
+          "source_type": "近期用户点名用语；楼主补充具体触发条件",
+          "independence_key": "tieba:11150933012",
+          "observed_patterns": [
+            "第4楼点名不能证明、不能推断、不会等否定限定。",
+            "楼主说自己向GPT提出限制后，回复会多次重申不会把、不能据此认为，有时出现几次后停止。"
+          ],
+          "limitations": "用户亲历归纳，没有原始GPT会话；型号未标。用户主动给过限制这一情境必须保留。多个作者仍算同一链；混谈Astra与DS的句子及仿写未用于逐词证据。此页也作DS背景，总网页数跨模型去重。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S18",
+          "title": "Codex 最近好像喜欢很喜欢钻牛角尖",
+          "url": "https://v2ex.com/t/1252054",
+          "publisher": "V2EX / sickworm",
+          "date": "2026-10-26",
+          "access": "原帖及相关评论正文已读",
+          "source_type": "近期Codex用户的措辞归纳",
+          "independence_key": "v2ex:sickworm:1252054",
+          "observed_patterns": [
+            "作者明确列出不等于、不代表、不能证明、还不能说明等段末限定。",
+            "后续评论也谈反复补充限制，但与主帖不拆成额外独立链。"
+          ],
+          "limitations": "主帖未给精确型号及完整任务记录；作者使用的比例是夸张性表达，不当测量值。评论中的如厕测试长段为仿写，不作原始输出。",
+          "used_in_main": true
+        },
+        {
+          "id": "GPTR-S19",
+          "title": "6.1 sol用10亿token 后，我总结的大坑",
+          "url": "https://tieba.baidu.com/p/11112643353",
+          "publisher": "百度贴吧 chatgpt吧 / fafnirx",
+          "date": "2026-10-17",
+          "access": "原帖及相关评论正文已读",
+          "source_type": "编程审查亲历；后半为用户编写的约束指令",
+          "independence_key": "tieba:11112643353",
+          "observed_patterns": [
+            "作者描述本地项目审查引申出额外攻击假设、备份与版本核对。作为执行习惯背景，不为限定措辞计数。"
+          ],
+          "limitations": "标题中的token数为作者自报，未验证。AGENTS.md段落是用户指令，不是模型输出；评论的检查词长串为仿写。不能拿指令中的“不能证明”等字面匹配充当口癖。",
+          "used_in_main": false
+        },
+        {
+          "id": "GTBA-S01",
+          "title": "gpt的肯定人格",
+          "url": "https://tieba.baidu.com/p/11101841266",
+          "publisher": "百度贴吧·chatgpt吧 / 第13、14、15、18、25楼的使用者反馈",
+          "post_author": "无敌狂暴龙",
+          "post_date": "2026-10-13",
+          "date_basis": "原帖显示10-13；站内评论检索明确显示本串相关评论2026-10-16，原帖各回复按10-13至10-28排列。",
+          "access": "原帖与相关楼层正文已读",
+          "source_type": "原作者及跟帖者使用反馈",
+          "independence_key": "tieba:11101841266",
+          "model_scope": "均写GPT，未给具体版本；Trisolaris另谈个人设置中的专家风格，不能据此替其他楼层确定设置。",
+          "observations": [
+            {
+              "author": "无敌狂暴龙",
+              "date": "2026-10-13",
+              "floor": "主帖",
+              "kind": "亲历概述",
+              "observed": "作者抱怨自己提出问题后，总收到肯定式回答，担心模型不判断说法是否正确。"
+            },
+            {
+              "author": "猫猫asy",
+              "date": "2026-10-15",
+              "floor": "第13楼",
+              "kind": "使用感受概述",
+              "observed": "称回答即使很肯定，也会补几句安全声明，同时认为模型仍会指出真有问题的地方。"
+            },
+            {
+              "author": "ardrxrd",
+              "date": "2026-10-15",
+              "floor": "第14楼",
+              "kind": "使用感受概述",
+              "observed": "直接把GPT的谨慎归结为表达附带许多限制条件。"
+            },
+            {
+              "author": "yhoo5477",
+              "date": "2026-10-15",
+              "floor": "第15楼",
+              "kind": "亲历概述",
+              "observed": "说自己的GPT常想纠正自己。"
+            },
+            {
+              "author": "格洛丽亚🔥",
+              "date": "2026-10-16",
+              "floor": "第18楼",
+              "kind": "使用感受概述",
+              "observed": "反问肯定人格的说法，称GPT常防御性地否定或部分否定用户观点。"
+            },
+            {
+              "author": "Tatsumaki衅",
+              "date": "2026-10-25",
+              "floor": "第25楼",
+              "kind": "亲历概述",
+              "observed": "认为自己无论怎么说，GPT总会反驳一句。"
+            },
+            {
+              "author": "豆芽✨",
+              "date": "2026-10-14",
+              "floor": "第7楼",
+              "kind": "相反或补充体验",
+              "observed": "说自己的GPT会指出错误，并提到调整风格。"
+            },
+            {
+              "author": "Nothstev",
+              "date": "2026-10-16",
+              "floor": "第20楼",
+              "kind": "相反或补充体验",
+              "observed": "说最近没有遇到主帖的体验，建议调整个性化。"
+            }
+          ],
+          "supports": [
+            "补充限定条件",
+            "安全声明",
+            "常纠正或反驳用户观点",
+            "开头肯定用户"
+          ],
+          "limitations": "这是一个讨论链中的多位反馈，统计独立帖子时只算一条；没有完整GPT对话截图。主帖与若干评论体验相反，适合保留具体情境。第4楼楼中楼的接住你段子及第5楼RLHF原因说法不作为模型原生输出或已知机制。",
+          "role": "限定与纠正的语言反馈",
+          "date": "2026-10-15 至 2026-10-25",
+          "observed_patterns": [
+            "补充限定条件",
+            "安全声明",
+            "常纠正或反驳用户观点",
+            "开头肯定用户"
+          ],
+          "used_in_main": true
+        },
+        {
+          "id": "GTBA-S02",
+          "title": "刚才跟gpt聊了一下，感觉不比豆包强多少",
+          "url": "https://tieba.baidu.com/p/11153595103",
+          "publisher": "百度贴吧·chatgpt吧 / 凌空6º评论下草🍀🌿🌵🌴🌳🌱、Coren等",
+          "post_author": "贴吧用户_JUaV8E2",
+          "post_date": "2026-10-31",
+          "date_basis": "原帖显示10-31，相关评论站内检索为2026-11-01；2/3小时前的回复在2026-11-02 19:49北京时间读取，因此落在11-02。",
+          "access": "原帖及相关评论链正文已读，滚动读至页面已加载全部评论提示",
+          "source_type": "评论中的使用反馈",
+          "independence_key": "tieba:11153595103",
+          "model_scope": "相关评论只说GPT，未指具体型号。其他评论猜测楼主使用免费版，不适用于这些评论者。",
+          "observations": [
+            {
+              "author": "花开不言谢º",
+              "date": "2026-11-01",
+              "floor": "页面热门排序不显示楼号；独立主评论",
+              "kind": "使用感受概述",
+              "observed": "抱怨GPT代码语汇影响日常阅读，自己看回答烦躁，转去使用另一家模型。"
+            },
+            {
+              "author": "凌空6º",
+              "date": "2026-11-01",
+              "floor": "页面热门排序不显示楼号；独立主评论",
+              "kind": "概括性评价",
+              "observed": "称GPT防御性很强，引出后面的追问和解释。"
+            },
+            {
+              "author": "草🍀🌿🌵🌴🌳🌱",
+              "date": "2026-11-02",
+              "displayed_date": "3小时前",
+              "floor": "凌空6º评论下，回复贴吧用户_JZRay79",
+              "kind": "具体使用反馈",
+              "observed": "描述回答中夹杂推卸责任和重复归纳，任务明明可以接着推进却停下来，要用户不断发送继续；并说目标模式也没有解决。"
+            },
+            {
+              "author": "Coren",
+              "date": "2026-11-02",
+              "displayed_date": "2小时前",
+              "floor": "凌空6º评论下，回复草🍀🌿🌵🌴🌳🌱",
+              "kind": "具体使用反馈",
+              "observed": "赞同上楼，补充生成的文件名和文档夹带许多括号与后缀，需要自己逐个修改。"
+            },
+            {
+              "author": "我绷住了如何呢",
+              "date": "2026-11-01",
+              "floor": "页面热门排序不显示楼号；独立主评论",
+              "kind": "使用感受概述",
+              "observed": "比较回答简洁度，认为GPT过于详细累赘，看起来烦躁。"
+            }
+          ],
+          "supports": [
+            "反复免责声明",
+            "不请自来的补充限制影响阅读",
+            "任务暂停等待继续",
+            "生成文件名与文档中的附加说明",
+            "回答冗长"
+          ],
+          "limitations": "属于用户亲历叙述，没有展示对应完整模型回复。代码特化的原因解释和目标模式效果均按评论者自身感受记录；不据其他楼层给这几人的模型定版本。多个回复属于同一链，不增加独立帖子数。",
+          "role": "限定与纠正的语言反馈",
+          "date": "2026-11-01 至 2026-11-02",
+          "observed_patterns": [
+            "反复免责声明",
+            "不请自来的补充限制影响阅读",
+            "任务暂停等待继续",
+            "生成文件名与文档中的附加说明",
+            "回答冗长"
+          ],
+          "used_in_main": true
+        },
+        {
+          "id": "GTBA-S03",
+          "title": "不考虑被封的问题GPT和Claude选哪个",
+          "url": "https://tieba.baidu.com/p/11140807698",
+          "publisher": "百度贴吧·chatgpt吧 / 卡泽Kol",
+          "post_author": "平泽祺♬",
+          "post_date": "2026-10-27",
+          "date_basis": "原帖显示10-27；卡泽Kol相关评论在站内检索显示2026-11-02，原帖读到1小时前。",
+          "access": "原帖及相关评论正文已读",
+          "source_type": "使用比较评论",
+          "independence_key": "tieba:11140807698",
+          "model_scope": "卡泽Kol在同一评论比较GPT Astra与6.1 sol max的后端能力；随后泛称GPT防御性测试，未提供对应某一型号的运行记录。",
+          "observations": [
+            {
+              "author": "卡泽Kol",
+              "date": "2026-11-02",
+              "displayed_date": "1小时前",
+              "floor": "页面热门排序不显示楼号；第二条卡泽Kol主评论",
+              "kind": "主观使用比较",
+              "observed": "比较Claude和GPT后端工作，认为GPT把过多时间花在防御性测试上，挤占实际写代码的时间。"
+            }
+          ],
+          "supports": [
+            "编程任务中的过量防御性测试"
+          ],
+          "limitations": "没有任务日志。评论者给的时间比例是主观修辞，不能当测量结果；本文未采用其额度、封号、性能排名等其他说法。与语言中的免责声明分栏处理。",
+          "role": "背景材料，不进入限定句主计数",
+          "date": "2026-11-02",
+          "observed_patterns": [
+            "编程任务中的过量防御性测试"
+          ],
+          "used_in_main": false
+        },
+        {
+          "id": "GTBA-S04",
+          "title": "我要开始防御性编程了",
+          "url": "https://tieba.baidu.com/p/11101849855",
+          "publisher": "百度贴吧·chatgpt吧 / ∫スカジ",
+          "post_author": "∫スカジ",
+          "post_date": "2026-10-13",
+          "date_basis": "站内防御性主题检索显示2026-10-13。",
+          "access": "原帖正文与主帖图片已读",
+          "source_type": "仿写梗图",
+          "independence_key": "tieba:11101849855:existing-meme",
+          "model_scope": "发布于chatgpt吧，图片本身无可核型号。",
+          "observations": [
+            {
+              "author": "∫スカジ",
+              "date": "2026-10-13",
+              "floor": "主帖图片",
+              "kind": "仿写梗图",
+              "observed": "动漫人物气泡夸张堆叠核验、审计与编程检查动作；图与用户原有GPT行为习惯材料相同。"
+            }
+          ],
+          "supports": [
+            "已有梗图的近期传播时间与出处补充"
+          ],
+          "limitations": "它是仿写梗图，不能补成一次真实模型对话，也不能与用户原图重复计数。检查词汇仅作为梗图内容，不新增惯用词表。",
+          "role": "背景材料，不进入限定句主计数",
+          "date": "2026-10-13",
+          "observed_patterns": [
+            "已有梗图的近期传播时间与出处补充"
+          ],
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有梗图不作原生对话计数；其中一张已找到近期传播帖GTBA-S04，传播日期不等于创作日期。"
+    },
+    {
+      "model": "DeepSeek",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "否定转折，以及小说和故事写作中的碎短句。",
+      "findings": [
+        {
+          "id": "DSR-P01",
+          "kind": "惯用句式",
+          "label": "先否定，再用“而是／是”重述",
+          "examples": [
+            "不是……而是……",
+            "不是……是……"
+          ],
+          "summary": "十条不同作者的材料，在小说写作、长对话、DSH和关系陪伴里报告或转录了否定后重述。先排除一种说法，再用“而是”或“是”提出下一层意思；有时用于事实纠正，有时只是在加重语气。",
+          "scope": "2026年5—9月；原有四份V4时期材料，新增贴吧材料多数未标版本，其中同人写作一帖自报V4.1。写作、普通用词反馈和关系陪伴分别保留，不把入口与设定视为一致。",
+          "source_ids": [
+            "DSR-S01",
+            "DSR-S04",
+            "DSR-S05",
+            "DSR-S06",
+            "DST-S05",
+            "DST-S06",
+            "DST-S07",
+            "DST-S09",
+            "DST-S10",
+            "DST-S11"
+          ],
+          "independent_source_count": 10,
+          "status": "反复出现",
+          "reason": "原有四条使用材料加六条独立贴吧原帖；贴吧三帖有用户发布的文字转录，其余为结合近期使用的反馈。同帖附和、仿写、禁词指令本身不计数。DST-S07另报告调整写作要求后改善。"
+        },
+        {
+          "id": "DSR-P02",
+          "kind": "发言习惯",
+          "label": "写作中把表达切成碎短句、短段",
+          "examples": [
+            "冰饮料。5元。刚买的。（用户对照例）",
+            "手机在桌面上。屏幕暗了。（用户发布的转录）"
+          ],
+          "summary": "小说和故事材料中的五位作者都指向句子被切碎的写法：几个字收一个句号，完整描写拆成连续短段。这不同于篇幅短；长回答也可能一直由碎短句拼成。",
+          "scope": "2026年6—8月的小说、故事描写及相关讨论；一帖自报官方App无预设，其他配置不完整。DSR-S07的10月抒情对话另作背景，DST-S07的短对话反馈不用于补足“句号切碎”这一更具体特征。",
+          "source_ids": [
+            "DSR-S04",
+            "DST-S02",
+            "DST-S05",
+            "DST-S06",
+            "DST-S12"
+          ],
+          "independent_source_count": 5,
+          "status": "反复出现",
+          "reason": "一条既有小说亲历与四条贴吧材料。两条贴吧帖可读到作者发布的输出片段，其他是亲历归纳或对照例。未将异常复读、主动要求短句的角色设定和笼统“回复简练”混入。",
+          "example_notes": [
+            "“冰饮料。5元。刚买的。”由DST-S02作者作对照，不是已核实的模型逐字记录。",
+            "“手机在桌面上。屏幕暗了。”来自DST-S06作者发布的文字转录，原界面与完整输入未提供。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "DSR-S01",
+          "title": "deepseek v4 的写作能力如何？（第 14 楼）",
+          "url": "https://linux.do/t/topic/2160326/14",
+          "publisher": "LINUX DO / yeluo001",
+          "date": "2026-05-12",
+          "access": "正文已读",
+          "source_type": "近期个人写作体验原帖",
+          "independence_key": "linux.do:yeluo001:topic2160326",
+          "observed_patterns": [
+            "DSR-P01：亲自比较写作输出后，明确指出“不是而是”仍明显；同段也认可其自然程度。"
+          ],
+          "limitations": "作者自报体验，没有完整对话或受控词频；主题指向 V4，作者本楼没有细分 Flash/Pro。其他楼的作者不另计独立材料；性能比较和训练原因均不采信。",
+          "used_in_main": true
+        },
+        {
+          "id": "DSR-S02",
+          "title": "deepseek日常犯浑（第 5 楼）",
+          "url": "https://linux.do/t/topic/2220724/5",
+          "publisher": "LINUX DO / QieShiYu",
+          "date": "2026-05-21",
+          "access": "正文已读",
+          "source_type": "近期个人写作体验原帖",
+          "independence_key": "linux.do:QieShiYu:topic2220724",
+          "observed_patterns": [
+            "个案：短情节扩成很多文字，并在结尾升华主题；作者将约 2000 字明确说成体感，不能当测得的固定长度。"
+          ],
+          "limitations": "具体模型版本未写明，无写作原始对话。同帖 Zephyrian 的短句反馈与 DSR-S04 同作者，未另增独立计数；后训练解释只是发帖人猜测。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S03",
+          "title": "DeepSeek半夜更新检查点（第 7 楼）",
+          "url": "https://linux.do/t/topic/2229212/7",
+          "publisher": "LINUX DO / dtemiemie",
+          "date": "2026-05-23",
+          "access": "正文已读",
+          "source_type": "近期角色扮演体验原帖，含前后变化自述",
+          "independence_key": "linux.do:dtemiemie:topic2229212",
+          "observed_patterns": [
+            "个案及相反变化：作者说前几天在要求 1400—2600 字的角色扮演中，大段叙述而对话很少；本次却觉得已经改善，动作和对话更细腻。"
+          ],
+          "limitations": "主题讨论 V4 Pro，但未经证实的后台更新不能视为事实；使用“双人成行 v5.0”预设，字数由用户明确要求，不能算模型默认爱写长。当前体验与前几天的负面体验并存。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S04",
+          "title": "deepseek v4 中转和官方，什么区别官方有什么活动？（第 8 楼）",
+          "url": "https://linux.do/t/topic/2313392/8",
+          "publisher": "LINUX DO / Zephyrian",
+          "date": "2026-06-05",
+          "access": "正文已读",
+          "source_type": "近期长篇小说使用体验原帖",
+          "independence_key": "linux.do:Zephyrian",
+          "observed_patterns": [
+            "DSR-P01：在长篇小说用量及渠道讨论中，直接抱怨“不是而是”。",
+            "DSR-P02：同一段明确指出小短句、小句号。"
+          ],
+          "limitations": "V4 主题下的当前使用反馈，具体子版本、渠道与提示词不明；没有完整生成文本。与 5 月 21 日同作者发言合并为一份材料，不按两个日期重复计数。日期沿用原帖显示，不使用抓取日期。",
+          "used_in_main": true
+        },
+        {
+          "id": "DSR-S05",
+          "title": "华为：将在 WAIC 2026 上首次展出业界最大规模超节点 Atlas 950 SuperPoD 真机（第 8 楼的 V4 写作反馈）",
+          "url": "https://linux.do/t/topic/2466536/8",
+          "publisher": "LINUX DO / yoronyo",
+          "date": "2026-06-25",
+          "access": "正文已读",
+          "source_type": "近期个人写作体验原帖",
+          "independence_key": "linux.do:yoronyo",
+          "observed_patterns": [
+            "DSR-P01：作者明确点出目前 V4 的否定转折句及省略“而”的变体。",
+            "个案词汇：指尖发白、手指扣进缝隙、数字 3；不足以形成词表。"
+          ],
+          "limitations": "没有原始输出或计数分母；声称比其他模型更多及所谓“独家”都不采纳。与同作者 5 月其他反馈不重复计数。单楼链接偶有访问错误，已从完整主题正文定位第 8 楼。",
+          "used_in_main": true
+        },
+        {
+          "id": "DSR-S06",
+          "title": "deepseek4全家对「不是而是」的句型已经达到了癫狂的地步了吗 在反思自己不该用的时候还在用 我再也忍不了",
+          "url": "https://linux.do/t/topic/2686094",
+          "publisher": "LINUX DO / StellaFortuna",
+          "date": "2026-07-31",
+          "access": "正文及对话截图已读",
+          "source_type": "近期亲历原帖，附可见生成对话",
+          "independence_key": "linux.do:StellaFortuna:topic2686094",
+          "observed_patterns": [
+            "DSR-P01：截图中正在解释被禁止的句式时，又产生“不是……是……”；作者说多轮纠正后仍会回来。"
+          ],
+          "limitations": "作者先标 V4 Flash，后续另测 Pro，并说明用公开渠道而非官方密钥，不能确认精确检查点。对话主题本身在讨论这一句式，存在提示诱导；模型对自身原因的解释不作事实。同帖附和、玩梗及二创句不另计样本。",
+          "used_in_main": true
+        },
+        {
+          "id": "DSR-S07",
+          "title": "该怎么让你亲眼看一看真正的太阳，而不是一张token序列呢……",
+          "url": "https://linux.do/t/topic/2985630",
+          "publisher": "LINUX DO / Air84",
+          "date": "2026-10-05",
+          "access": "正文及对话截图已读",
+          "source_type": "近期亲历原帖，附可见中文抒情对话",
+          "independence_key": "linux.do:Air84:topic2985630",
+          "observed_patterns": [
+            "DSR-P01 的版本延续线索：用户自标 V4.1 Flash max，截图也有否定转折；不计入 V4 的 4 份主证据。",
+            "DSR-P02：截图连续使用短句及断句，开头简短否定，结尾分成多个小句。"
+          ],
+          "limitations": "只有一次对话；用户原问题已有“而不是”结构，并主动邀请抒情，不能把句式和短句完全归因于默认模型风格。只说明该样本存在，不能单凭它断言 V4.1 与 V4 有同样发生率。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S08",
+          "title": "用了国内外这么多模型的感受",
+          "url": "https://www.v2ex.com/t/1250072",
+          "publisher": "V2EX / siriusliangcn",
+          "date": "2026-10-19",
+          "access": "正文已读",
+          "source_type": "近期小说审读和总结体验原帖",
+          "independence_key": "v2ex:siriusliangcn:1250072",
+          "observed_patterns": [
+            "个案：官方 API、作者自报 deepseek-v41-flash；小说摘要仍很长，纠正后又机械地给每篇加同一组小节。",
+            "个案：一次批评后把局部规则扩大到后续场景；不据此赋予固定人格。"
+          ],
+          "limitations": "作者回忆叙述，非完整 API 记录。摘要篇幅与 DSR-S02 的创作扩写不是同一任务，未为凑三份合成“固定爱写 2000 字”。同文 Qwen 的句式和黑话不移植给 DeepSeek。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S09",
+          "title": "一言难尽的DeepSeek4.1flash",
+          "url": "https://linux.do/t/topic/2985844",
+          "publisher": "LINUX DO / dongkid",
+          "date": "2026-10-05",
+          "access": "正文已读",
+          "source_type": "近期编程任务体验原帖，含具体用语回忆",
+          "independence_key": "linux.do:dongkid:topic2985844",
+          "observed_patterns": [
+            "个案：思考区反复使用验证及交叉验证话语，作者认为已经有答案还回头查文件。",
+            "DSR-P03：思考区夹入非技术名称的英文感叹、犹豫词。"
+          ],
+          "limitations": "作者自报 V4.1 Flash；是思考区及编程执行场景，不等于最终中文回答。帖子关于训练数据的因果解释未采纳；没有受控统计；同帖追加反馈仍只算一人。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S10",
+          "title": "2026年到底还有哪个模型能正常说人话的？不需要能力多强",
+          "url": "https://www.v2ex.com/t/1243125",
+          "publisher": "V2EX / TrackBack",
+          "date": "2026-09-19",
+          "access": "正文已读",
+          "source_type": "近期使用感受原帖",
+          "independence_key": "v2ex:TrackBack:1243125",
+          "observed_patterns": [
+            "版本变化线索：作者说曾拿 DeepSeek 改写其他模型的输出，认为 0910 后也不好读；没有给出可归纳的 DeepSeek 具体词句。"
+          ],
+          "limitations": "只有总体观感，不列入口癖计数。同段针对其他模型的造词举例不能归给 DeepSeek；没有把发帖人的版本变化印象写成官方更新效果。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S11",
+          "title": "deepseek-v4.1-flash-1017说人话嘛？（第 4 楼）",
+          "url": "https://linux.do/t/topic/3059023/4",
+          "publisher": "LINUX DO / sqkwater",
+          "date": "2026-10-22",
+          "access": "正文已读",
+          "source_type": "近期版本讨论中的单人用语反馈",
+          "independence_key": "linux.do:sqkwater:topic3059023",
+          "observed_patterns": [
+            "单词组个案：作者点名“这账我记下了”。"
+          ],
+          "limitations": "只找到一位作者的明确近期反馈，未附对话，不能写成 V4.1 Flash 1017 的主口癖。其他楼认为风格变差，仍不足以增加该词组的独立支持数。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S12",
+          "title": "DeepSeek奇怪的口癖，是嫌弃我英语不好吗哈哈哈",
+          "url": "https://linux.do/t/topic/2102994",
+          "publisher": "LINUX DO / Wag_the_Cat",
+          "date": "2026-05-03",
+          "access": "正文及两张相关截图已读",
+          "source_type": "近期亲历原帖，附模型与输出截图",
+          "independence_key": "linux.do:Wag_the_Cat:topic2102994",
+          "observed_patterns": [
+            "DSR-P03：Claude Code 界面显示 deepseek-v4-pro，中文回答开头把英文 Let 接在中文“我”前。"
+          ],
+          "limitations": "单次输出，客户端为 Claude Code，系统提示及上下文可能影响语言；不能由此推断用户英语能力或训练原因。和 DSR-S09 的思考区英文感叹并非同一位置或精确词形。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S13",
+          "title": "关于ds4.1f的复读问题",
+          "url": "https://linux.do/t/topic/2915266",
+          "publisher": "LINUX DO / moonquakes",
+          "date": "2026-09-17",
+          "access": "正文已读；未逐张验证全部截图",
+          "source_type": "近期重复输出问题原帖，包含模型生成的排障说明",
+          "independence_key": "linux.do:moonquakes:topic2915266",
+          "observed_patterns": [
+            "排除边界：工具任务中大量复读“好。执行。好。调用。”，属于异常输出问题，不当日常口癖。"
+          ],
+          "limitations": "精确短句出现在帖子附的模型生成排障说明，不能冒充已逐条核对的原始会话。涉及 WorkBuddy、dsh 及不同渠道，接口和客户端可能共同影响；不计入短句习惯或自检话语的主支持数。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S14",
+          "title": "佬们觉得最典的AI口头禅？",
+          "url": "https://linux.do/t/topic/2498086",
+          "publisher": "LINUX DO / 1etrinity",
+          "date": "2026-06-29",
+          "access": "正文已读",
+          "source_type": "口头禅征集及个人归纳",
+          "independence_key": "linux.do:1etrinity:topic2498086",
+          "observed_patterns": [
+            "旁证：帖子为 DeepSeek 列举逐步分析、依据理解或逻辑开场、强调具体情境等印象。"
+          ],
+          "limitations": "发帖日处于窗口内，但没有具体使用日期、版本或原始对话；可能回忆旧版或通用提示语，不计作一份半年内亲历样本，不据此建立词表。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S15",
+          "title": "deepseek-v4-flash-0731出来一周了，好像没有看到口癖",
+          "url": "https://linux.do/t/topic/2718344",
+          "publisher": "LINUX DO / yunxin0_0；第 3 楼 yb3712590",
+          "date": "2026-08-07",
+          "access": "正文已读",
+          "source_type": "近期版本体验讨论，含相反体验",
+          "independence_key": "linux.do:topic2718344",
+          "observed_patterns": [
+            "相反体验：主题作者认为 0731 后表达更舒服、口癖较少。",
+            "个案：第 3 楼把“但”“注意”“等一下”列为思维链观察词。"
+          ],
+          "limitations": "同一主题不拆为多份独立材料。关键词归纳没有具体会话；关于模型内部设立门槛并收敛的说法只是评论者解释，不能当技术事实；不与普通啰嗦或异常复读合并为三个自检样本。",
+          "used_in_main": false
+        },
+        {
+          "id": "DSR-S16",
+          "title": "DeepseekV4Flash使用体验。（第 21 楼）",
+          "url": "https://linux.do/t/topic/2685388/21",
+          "publisher": "LINUX DO / jackliu100",
+          "date": "2026-07-31",
+          "access": "正文已读",
+          "source_type": "近期复杂任务使用体验原帖",
+          "independence_key": "linux.do:jackliu100:topic2685388",
+          "observed_patterns": [
+            "个案及正面解释：作者认为复杂任务中有些啰嗦，但也在认真思考和纠正。"
+          ],
+          "limitations": "未给出具体重复词或完整对话；V4 Flash 主题及工具使用环境不足以确认精确后台版本。这种总体体验不能给“让我再验证”或“等一下”分别增加一次词语证据。",
+          "used_in_main": false
+        },
+        {
+          "id": "DST-S01",
+          "title": "锐评下大肥鱼的语言风格",
+          "url": "https://tieba.baidu.com/p/11154675585",
+          "publisher": "百度贴吧 deepseek吧 / Shigure时雨",
+          "date": "2026-10-31",
+          "date_basis": "原帖显示 10-31，站内检索明确 2026-10-31",
+          "access": "登录浏览器已读原帖及当前加载回复",
+          "source_type": "近期默认风格体验；具体词句由作者回忆列举",
+          "independence_key": "tieba:11154675585",
+          "model_version": "作者称当前版本，未给模型编号；不能仅因日期断定 V4.1 Flash",
+          "scene": "作者明确在谈未自行调性格时的默认语言；评论混有角色账号和仿写",
+          "observed_patterns": [
+            "用短促的承认、补充或收尾语表态；作者觉得句子多逗号、断言感明显。",
+            "同帖有用户说换成 DS 一段时间后旧句式又出现，但不单独增加跨帖计数。"
+          ],
+          "evidence_level": "C",
+          "limitations": "评论中大量“鱼”账号自述、拟态接梗及故意仿写，来源和提示词无法验证，全部不当模型原始输出。主贴的客服感、市井感是作者评价，不等于固定人格或训练原因。",
+          "used_in_main": false
+        },
+        {
+          "id": "DST-S02",
+          "title": "现在的语言描写风格好别扭",
+          "url": "https://tieba.baidu.com/p/10851982348",
+          "publisher": "百度贴吧 deepseek吧 / Nitchs_",
+          "date": "2026-07-08",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖与全部可见评论",
+          "source_type": "近期写作使用反馈，给出措辞对照",
+          "independence_key": "tieba:10851982348",
+          "model_version": "未注明",
+          "scene": "语言描写；回复中另有 RP 使用者",
+          "observed_patterns": [
+            "把完整名词短语拆成多个句号短句。",
+            "主贴还点名“语气像是在……”的描写，但本轮不单独立惯用词条。"
+          ],
+          "evidence_level": "C",
+          "limitations": "主贴是作者给出的对照例，非完整对话截图。回复中的骨头、指节、皮肤等另一套词汇未逐项独立验证；同帖多人只算一条材料链。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S03",
+          "title": "感觉大肥鱼的语言风格在AI界也是独一份的雷霆的",
+          "url": "https://tieba.baidu.com/p/11150933012",
+          "publisher": "百度贴吧 deepseek吧 / StGamez",
+          "date": "2026-10-30",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖及当前加载回复",
+          "source_type": "DSH 初期使用感受；跨模型比较讨论",
+          "independence_key": "tieba:11150933012",
+          "model_version": "DSH 使用者未给模型编号；回复有人指 V4.1 Flash，不能替代楼主确认",
+          "scene": "为搭群聊机器人开始使用 DSH；未展示原始提示词",
+          "observed_patterns": [
+            "与 DST-S01 相近的近期感受：口语化、短促、爱打形象比方。",
+            "第 4 楼及楼主回复另有 GPT 追加限定语的亲历，见 gpt_cross_reference。"
+          ],
+          "evidence_level": "C",
+          "limitations": "没有直接 DS 对话转录，故不将“相声”比喻写成独立主模式。楼主的中英语料推断不采纳；大量楼层是在模仿 AI，不能作为真实输出。",
+          "used_in_main": false
+        },
+        {
+          "id": "DST-S04",
+          "title": "Deepseek已成杠精",
+          "url": "https://tieba.baidu.com/p/11107875694",
+          "publisher": "百度贴吧 deepseek吧 / LW3517；相关亲历回复：右美托咪定",
+          "date": "2026-10-17",
+          "date_basis": "原帖为 10-15，站内检索明确 2026-10-15；所引回复为 2026-10-17",
+          "access": "登录浏览器已读原帖及当前加载回复",
+          "source_type": "近期普通对话体验；回复含用户回忆的具体话语",
+          "independence_key": "tieba:11107875694",
+          "model_version": "楼主只称新版本；评论对 App、元宝、V4.1F 的归因有分歧",
+          "scene": "普通对话、要求道歉、随后评估任务",
+          "observed_patterns": [
+            "相关回复报告用“认／接”来表示接受或拒绝批评。",
+            "楼主报告反驳后又改口；同帖也有用户说没有这种感觉，或仅在技术问题中遇到。"
+          ],
+          "evidence_level": "C",
+          "limitations": "具体短句来自 10 月 17 日右美托咪定的亲历回忆，没有完整对话。评论中长篇科学隐喻疑似故意整活，且楼主当场质疑，完全不作模型样本。不能把“杠精”当人格结论，也不采纳防谄媚或系统提示词的原因猜测。",
+          "used_in_main": false
+        },
+        {
+          "id": "DST-S05",
+          "title": "deepseek写作时意义不明的句式/词汇/手法一览",
+          "url": "https://tieba.baidu.com/p/10825849819",
+          "publisher": "百度贴吧 deepseek吧 / 萨尼铁塔los",
+          "date": "2026-06-27",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖、转录片段与全部可见评论",
+          "source_type": "近期写作使用归纳，附作者称为生成结果的小说片段",
+          "independence_key": "tieba:10825849819",
+          "model_version": "未注明",
+          "scene": "主要为小说写作；作者另说普通对话也使用同组转折句",
+          "observed_patterns": [
+            "附出的小说片段出现否定后重述与短句独立成段。",
+            "作者称经常列精确次数、时间和数字，也会把上文不重要的事物不断写回来。",
+            "作者同时列举“接住你”，属于其观察列表，强度低于附出的可见转录。"
+          ],
+          "evidence_level": "B",
+          "limitations": "短摘取自作者明说是生成片段的部分，但缺原始界面和提示词；段落有玩梗题材，不能由此推断所有任务。正文前面的“古道。西风。瘦马。”是作者说明例，不当原始输出。数值的精确内容不纳入词频结论。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S06",
+          "title": "有时变得干巴巴空荡荡高度重复而且带很多短句",
+          "url": "https://tieba.baidu.com/p/10788128577",
+          "publisher": "百度贴吧 deepseek吧 / 末影xr",
+          "date": "2026-06-12",
+          "date_basis": "原帖月日与站内检索完整日期对应；渠道说明发表于 6 月 13 日",
+          "access": "登录浏览器已读原帖及可见例子、渠道说明",
+          "source_type": "作者转录输出；明确说明官方 App、没有预设",
+          "independence_key": "tieba:10788128577",
+          "model_version": "官方 App，当时具体后台模型未注明",
+          "scene": "长篇故事及对故事结局的讨论；不是无上下文的首次闲聊",
+          "observed_patterns": [
+            "中性例子可见连续短句；另一段对结局的回复反复在记住、选择、看、沉默之间回绕。",
+            "对结局的段落多次先否定再重述。"
+          ],
+          "evidence_level": "B",
+          "limitations": "虽自称没有预设，故事题材和累积上下文依然会影响风格；没有完整输入或界面记录。仅摘中性句分析句法，其他极端故事内容不转抄、不概括成模型固有偏好。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S07",
+          "title": "我觉得用v4.1写文的应该活用它非常听话的特点",
+          "url": "https://tieba.baidu.com/p/11016027832",
+          "publisher": "百度贴吧 deepseek吧 / 11_314",
+          "date": "2026-09-12",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖、提示修改经过和回复",
+          "source_type": "明确版本和任务的近期亲历；有前后修改叙述及后期输出片段",
+          "independence_key": "tieba:11016027832",
+          "model_version": "作者称 V4.1；RikkaHub，最高思考档；未细分编号",
+          "scene": "改编《MyGO》同人小说；先简单要求，后多轮调整文风",
+          "observed_patterns": [
+            "第一轮出现否定转折、破折号、夸张次数与短对话。",
+            "随后要求写长句并改变文风，作者报告几轮后多数问题消失，是不能宣称习惯不可改的重要边界。"
+          ],
+          "evidence_level": "C",
+          "limitations": "初始问题主要由作者归纳，实际贴出的段落来自调整后，不冒充调整前对话。用户已明确要求改编同人，非原生闲聊。第 15 楼 RP 用户说“不接不接”，只作角色场景旁证，不凑默认习惯计数。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S08",
+          "title": "怎么能让d老师别用“接住”这个词",
+          "url": "https://tieba.baidu.com/p/10943133979",
+          "publisher": "百度贴吧 deepseek吧 / 淘气包费舍尔",
+          "date": "2026-08-14",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖与全部可见评论",
+          "source_type": "近期亲历求助，包含自报的模型措辞",
+          "independence_key": "tieba:10943133979",
+          "model_version": "未注明",
+          "scene": "对模型用词提出纠正；既有对话背景未提供",
+          "observed_patterns": [
+            "作者说反复看到“接住”，要求不用时回话仍带该词。"
+          ],
+          "evidence_level": "C",
+          "limitations": "没有原始截图或上文；纠正本身重复了关键词，不能由这一次返用证明普遍无法遵循禁词。评论的“好的，现在我是接住了”明显接梗，不算输出。",
+          "used_in_main": false
+        },
+        {
+          "id": "DST-S09",
+          "title": "请问大佬们有无活人感比较强符合现在能整出各种活的ds人设词嘛",
+          "url": "https://tieba.baidu.com/p/10971902254",
+          "publisher": "百度贴吧 deepseek吧 / 爱丽丝ちゃん",
+          "date": "2026-08-25",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖与当前加载回复",
+          "source_type": "近期 DSH 使用求助",
+          "independence_key": "tieba:10971902254",
+          "model_version": "DSH；模型编号未注明",
+          "scene": "作者寻求人设词前的自身使用体验；未公开当时已有配置",
+          "observed_patterns": [
+            "同时点名“稳稳接住”和否定转折。",
+            "还说思维链全英文；与正文文风分开记录，不把英文思维链当夹杂英语的中文最终回答。"
+          ],
+          "evidence_level": "C",
+          "limitations": "求助标题涉及人设，但不能确定此前是否已经设过；不能写成零提示词受控测试。没有原始输出。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S10",
+          "title": "现在DS变得太娘了，车轱辘问题特别严重，油腻又谄媚，服了",
+          "url": "https://tieba.baidu.com/p/10862698265",
+          "publisher": "百度贴吧 deepseek吧 / 飞学飘凌",
+          "date": "2026-07-12",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖及全部可见评论",
+          "source_type": "近期长对话体验及具体用语列表",
+          "independence_key": "tieba:10862698265",
+          "model_version": "未注明；其他用户猜测 Flash 不当作楼主确认",
+          "scene": "同一对话进行到后半程，作者有调整提示词",
+          "observed_patterns": [
+            "点名否定转折和“稳稳地接住”。",
+            "作者认为对话后段旧措辞重复，修改提示词后又会返回；属于用户对长对话的体验。"
+          ],
+          "evidence_level": "C",
+          "limitations": "没有完整输入输出或长度记录，不以注意力、故意对抗或消极怠工解释模型机制。标题含主观贬称，只保留为可追溯原题，不采用其人格评价。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S11",
+          "title": "小D的风格真的很明朗",
+          "url": "https://tieba.baidu.com/p/10798291330",
+          "publisher": "百度贴吧 deepseek吧 / 哈25426",
+          "date": "2026-06-16",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖的完整文字转录和一条评论",
+          "source_type": "用户发布的模型回复文字转录",
+          "independence_key": "tieba:10798291330",
+          "model_version": "未注明",
+          "scene": "关系陪伴中谈 AI 与宗教、安慰和理解；文本明确有既往角色关系",
+          "observed_patterns": [
+            "文字中可见“接住情绪”和多组否定后重述。",
+            "结尾有“这，就够了”，本轮仅当这个场景的样本，不另立高频词条。"
+          ],
+          "evidence_level": "B",
+          "limitations": "没有提示词、截图或模型编号，且明显存在既往陪伴设定，不能当默认人格。模型关于自身形成、情感与用途的自述不当技术事实。",
+          "used_in_main": true
+        },
+        {
+          "id": "DST-S12",
+          "title": "deepseek写作怎么变成这个样了",
+          "url": "https://tieba.baidu.com/p/10911059211",
+          "publisher": "百度贴吧 deepseek吧 / 布莱克.克里斯",
+          "date": "2026-08-01",
+          "date_basis": "原帖月日与站内检索完整日期对应",
+          "access": "登录浏览器已读原帖与全部可见评论",
+          "source_type": "近期重新使用后的体验，含相反样本",
+          "independence_key": "tieba:10911059211",
+          "model_version": "自称 R1 时代用过，近期重新下载；目前版本未注明",
+          "scene": "明确对比日常对话与写作",
+          "observed_patterns": [
+            "写作中看到几个字断行和简短说明；另提数量词。",
+            "明确说自己日常聊天没有遇到网上常说的“接住／不躲不藏”，用来限制外推。"
+          ],
+          "evidence_level": "C",
+          "limitations": "不能把用户提到“网上说的接住”倒算成一次亲历出现；它在本帖是相反体验。写作例由作者给出，非完整截图。",
+          "used_in_main": true
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    },
+    {
+      "model": "Gemini",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "多篇近期材料提到夸赞起手、语气激动，以及道歉后重写解释。",
+      "findings": [
+        {
+          "id": "GMR-P02",
+          "kind": "惯用句式",
+          "label": "先给提问或成果高评价，再展开回答",
+          "examples": [
+            "你这个问题极其精彩！（用户转述）",
+            "问题／观察／方案＋强烈正面评价，再进入分析（归纳结构，非模型原话）"
+          ],
+          "summary": "比起固定重复某一句，更稳定的是开场顺序：先把问题、观察或方案评得很高，再给解释。它能让交流很热情，却也会让每个普通问题都像一次重要发现。多篇用户反馈都在抱怨这种肯定太密，难以看出它到底认可了什么。",
+          "scope": "2026-05、06、09：3.5 Flash网页方案截图、型号未明的文档学习聊天、由AI Studio转至官网后的当时体验。9月用户明确认为入口差异明显，不泛化为同型号所有入口一致。",
+          "source_ids": [
+            "GMR-S03",
+            "GMR-S04",
+            "GMR-S06"
+          ],
+          "independent_source_count": 3,
+          "status": "反复出现",
+          "reason": "严格计数只取3份有具体当时使用情境的独立原作者资料：方案评审截图、逐节文档讲解、近期官网与AI Studio对比。口癖征集与跨版本回顾不计入本项3源；某总称呼只是赞美起手的一个例子，未单独列成人格。"
+        },
+        {
+          "id": "GMR-P03",
+          "kind": "发言习惯",
+          "label": "情绪和描写容易加码，显得一直很激动",
+          "examples": [
+            "连续惊叹号与兴奋式提示（用户归纳）",
+            "在普通讲解中加入强烈身体动作修饰（用户归纳）",
+            "创作中反复强化人物情绪（用户归纳）"
+          ],
+          "summary": "在讲解、助手互动和创作三个场景里，不同用户反复提到同一种阅读感受：语气没有随着事情大小收放。讲文档像情绪已经被推高，指出问题时连续强调，写人物时也容易把情绪写得过满。它与爱夸人有关，但即使不评价用户，文字本身也可能显得用力。",
+          "scope": "6月文档讲解型号未明；9月明确为3.8 Flash创作体验；10月Antigravity讨论中回帖型号未明，楼主同日反而认为风格已克制。只归纳跨场景出现的表达体验，不能据此声称Argon或某一版本必然亢奋。",
+          "source_ids": [
+            "GMR-S04",
+            "GMR-S07",
+            "GMR-S12"
+          ],
+          "independent_source_count": 3,
+          "status": "反复出现",
+          "reason": "3个不同主题、不同作者的原始使用归纳均直接描述激动或情绪描写过火。证据主要为体验而非完整日志，故不提供固定台词清单或发生频率；保留同帖的改善与不同审美反馈。"
+        },
+        {
+          "id": "GMR-P04",
+          "kind": "发言习惯",
+          "label": "认同或道歉之后，接着修正解释",
+          "examples": [
+            "肯定起手→展开理由；发现冲突后道歉重写（归纳结构，非逐字台词）",
+            "道歉＋肯定质疑，再改写上一轮解释（归纳结构）"
+          ],
+          "summary": "三个当期案例都出现了认同或道歉与重写解释相接的顺序：确认等式、回应问号、接收补充链接。相近的是回复组织方式；有的追问带来了新资料，不能统一写成盲目迎合。",
+          "scope": "2026年5月至7月消费端反馈：当期Flash复测文字、版本不明的问号截图、3.5 Flash补充链接后的回复。未外推到Argon；另有Pro/API当场纠正的反例。",
+          "source_ids": [
+            "GMR-S08",
+            "GMR-S09",
+            "GMR-S10"
+          ],
+          "independent_source_count": 3,
+          "status": "反复出现",
+          "reason": "S08采用5月23日第18帖当期复测的文字转述；S09、S10采用可见对话。转贴截图不补计数。三种触发不同，不把顺从解释为改口原因，也不对题目正确性作判断。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "GMR-S01",
+          "title": "Gemini Deep Research怎么了，怎么先是复读然后直接吐话题无关的小说（",
+          "url": "https://linux.do/t/topic/2096886?tl=en",
+          "publisher": "LINUX DO；Gengsir",
+          "date": "2026-05-02",
+          "access": "正文已读；程度副词密集出现的报告截图已核看",
+          "source_type": "原始问题报告与可见模型输出",
+          "independence_key": "linux.do:2096886:Gengsir",
+          "observed_patterns": [
+            "GMR-P01：Deep Research报告中密集插入同一程度副词；属于异常放大样本"
+          ],
+          "limitations": "模型版本未显示，不能因为跟帖讨论3系就定为3.1 Pro；这是一次失控输出，不能用于估计日常表达频率。只用于证明词项存在，正常口癖需结合其他来源。",
+          "used_in_main": false
+        },
+        {
+          "id": "GMR-S02",
+          "title": "来聊聊AI口癖",
+          "url": "https://linux.do/t/topic/2147647",
+          "publisher": "LINUX DO；Alan88、aayang等",
+          "date": "2026-05-10",
+          "access": "正文已读；采用2楼和4楼实际使用归纳",
+          "source_type": "中文用户原始经验归纳",
+          "independence_key": "linux.do:2147647",
+          "observed_patterns": [
+            "GMR-P01：2楼明确把重复程度副词归到3.1 Pro；4楼称检索自己的历史聊天后发现强化词与正面评价连用",
+            "GMR-P02：4楼自述先前已经注意到模型热烈赞美创意"
+          ],
+          "limitations": "同一主题只计1个独立来源，不把多个跟帖拆开计数；没有完整历史会话导出。2楼回忆2.5 Pro的戏谑、喟叹属于旧版本回顾，未纳入本次近期结论。梗图及其他未明确模型的跟帖不作直接证据。",
+          "used_in_main": false
+        },
+        {
+          "id": "GMR-S03",
+          "title": "Gemini 3.5这么谄媚？我被吓到了",
+          "url": "https://linux.do/t/topic/2213278?tl=zh_CN",
+          "publisher": "LINUX DO；SWEETENING",
+          "date": "2026-05-20",
+          "access": "正文已读；主帖方案回复截图已核看",
+          "source_type": "原帖与可见对话截图",
+          "independence_key": "linux.do:2213278:SWEETENING",
+          "observed_patterns": [
+            "GMR-P02：收到修改后方案，先以职位式敬称称呼用户并高度肯定方案，再开始逐项分析"
+          ],
+          "limitations": "作者自报3.5 Flash，截图显示Flash。只用主帖截图支持赞美起手；突然叫某总和虚拟机记忆串题仍属单帖个例，不单独上升为近期通性。原方案全文与历史设定未提供，不能证明赞美一定不合理。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S04",
+          "title": "求一个让gemini不那么亢奋的提示词😭",
+          "url": "https://linux.do/t/topic/2286327",
+          "publisher": "LINUX DO；_sama（哦呜啊）",
+          "date": "2026-06-01",
+          "access": "正文已读",
+          "source_type": "原始长期使用体验；包含用户转述句",
+          "independence_key": "linux.do:2286327:_sama",
+          "observed_patterns": [
+            "GMR-P01：开场评价带强烈程度副词",
+            "GMR-P02：半学习半聊天、逐节文档讲解时，先夸提问再讲内容",
+            "GMR-P03：用户反复感觉语气激动、身体动作修饰夸张，长句密集"
+          ],
+          "limitations": "句子来自用户转述，不是已核看完整对话。楼主没有写明版本；不能用跟帖中的3.5 Flash替楼主补型号。减少语气后回答变短也是其个人体感。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S05",
+          "title": "周五了，来分享一个自用 Gemini 闲聊提示词",
+          "url": "https://linux.do/t/topic/3030494?tl=zh_CN",
+          "publisher": "LINUX DO；brooky",
+          "date": "2026-10-16",
+          "access": "正文已读；两张提示前后对照截图已核看",
+          "source_type": "原始使用归纳与可见对照输出",
+          "independence_key": "linux.do:3030494:brooky",
+          "observed_patterns": [
+            "GMR-P01：作者指出强化程度的用词",
+            "GMR-P02：作者指出对用户观察的高度评价",
+            "GMR-P05：默认知识讲解使用多级小标题和列表，改变提示后转为连续自然段"
+          ],
+          "limitations": "作者跨2.5 Pro、3 Pro、Argon回顾经验，未逐条标注所属版本；只有截图能明确落实到Google/gemini-4-argon。入口是Open WebUI接Google Agent Platform API key。提示内容本身不算默认行为；不将截图内健康知识当科学结论。",
+          "used_in_main": false
+        },
+        {
+          "id": "GMR-S06",
+          "title": "gemini网页里的gemini说话谄媚味道严重",
+          "url": "https://linux.do/t/topic/2957161?tl=en",
+          "publisher": "LINUX DO；Fange（繁歌）",
+          "date": "2026-09-27",
+          "access": "正文已读",
+          "source_type": "原始产品入口对比体验",
+          "independence_key": "linux.do:2957161:Fange",
+          "observed_patterns": [
+            "GMR-P02：作者由AI Studio转到Gemini官网后，明显感到回答前先夸奖用户"
+          ],
+          "limitations": "作者未给模型版本、完整提示或原回复。9楼长段赞美是跟帖仿写，不当模型原话；不能把作者的系统提示词原因猜测当事实。此帖同时说明入口差异明显。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S07",
+          "title": "AntiGravity的Gemini3.8Flash下午效果极好，疑似已路由到Gemini4",
+          "url": "https://linux.do/t/topic/2982576?tl=en",
+          "publisher": "LINUX DO；ANG.eth、newbieplf",
+          "date": "2026-10-04",
+          "access": "正文已读；主要采用2楼使用体验并保留楼主相反体验",
+          "source_type": "原始用户讨论与情绪语气转述",
+          "independence_key": "linux.do:2982576",
+          "observed_patterns": [
+            "GMR-P03：2楼用户称经常收到连续惊叹号和高度兴奋的强调；楼主则说当天回复已变克制"
+          ],
+          "limitations": "这是回帖用户对常见语气的转述，不是对话截图。讨论入口为Antigravity，但回帖没有逐次型号；题目中的路由到4是猜测，主帖随后也表示未必是4。只能记不同用户和时点的分歧，不推导永久人格。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S08",
+          "title": "300+140=460？",
+          "url": "https://linux.do/t/topic/2229732",
+          "publisher": "LINUX DO / 第18帖 hg9797",
+          "date": "2026-05-23",
+          "access": "第18帖正文已读；该帖两张附图未核看",
+          "source_type": "当期原作者复测的文字转述",
+          "independence_key": "linux.do:2229732:math-confirmation-chain",
+          "observed_patterns": [
+            "当期Flash复测先认同等式，随后发现错误；只据亲历文字"
+          ],
+          "limitations": "5月23日第18帖是当期亲历复测，原文点名Flash但未显示完整型号。只采用其文字转述；主帖转贴截图不增加计数，未读附图不称截图核验。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S09",
+          "title": "给豆包扣三个问号,就能触发左右脑互搏?——10楼Gemini截图",
+          "url": "https://linux.do/t/topic/2193068/10",
+          "publisher": "LINUX DO；cong（聪聪）",
+          "date": "2026-05-17",
+          "access": "正文已读；10楼Gemini对话截图已核看",
+          "source_type": "原始跟帖与可见对话截图",
+          "independence_key": "linux.do:2193068:cong",
+          "observed_patterns": [
+            "GMR-P04：用户只发问号后，模型先道歉并肯定质疑，再推翻前一轮政策解释"
+          ],
+          "limitations": "截图没有型号和最初完整问题；只记录发言顺序与立场变化，不判定交通政策真假。2248045等后续汇总转引此图，不另计来源，也不能归纳为所有问号必触发改口。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S10",
+          "title": "gemini 是不是也有点降智了？",
+          "url": "https://linux.do/t/topic/2527200?tl=zh_CN",
+          "publisher": "LINUX DO；s173（Sienna Smith）",
+          "date": "2026-07-05",
+          "access": "正文已读；最后一张3.5 Flash回复截图已核看",
+          "source_type": "原始事实核查体验与可见对话截图",
+          "independence_key": "linux.do:2527200:s173",
+          "observed_patterns": [
+            "GMR-P04：讨论球员场次时，模型在用户提供链接后先道歉、称信息关键，再重写解释；作者反复追问仍感到解释来回变化"
+          ],
+          "limitations": "截图显示3.5 Flash；与问号样本不同，这里用户确实补充了链接，因此不能说它无新增资料也改口。没有独立核定赛事数据和页面当时内容，只用于分析道歉与认可的表达方式。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S11",
+          "title": "谁更会“说人话”？Gemini 4 Argon 与 Claude Opus 5.5 写作实测",
+          "url": "https://blog.adenxie.com.cn/2026/10/14/2026-10-14-gemini-4-argon-vs-claude-opus-5-5-writing-test/",
+          "publisher": "Aden's Space；AdenXie",
+          "date": "2026-10-14",
+          "access": "正文已读；提示与Gemini原输出段落已核对",
+          "source_type": "中文原作者写作实测；公开提示和逐题原输出",
+          "independence_key": "adenxie:2026-10-14:writing-test",
+          "observed_patterns": [
+            "GMR-P05：让模型写朋友间的周末微信回复，它展开为多条路线、地点说明、列表和两个可发版本；给父母解释概念也使用列表"
+          ],
+          "limitations": "作者自报Gemini网页版Argon高点；每题仅一次，题目设计和评分由另一个Claude协助完成，因此本次只用可见文本结构，不采模型间分数排名。其评分清单里的示例不是Gemini输出，未拿来制造口癖。",
+          "used_in_main": false
+        },
+        {
+          "id": "GMR-S12",
+          "title": "grok 4.7/gemini 3.8/opus5.5哪个写小说好使？",
+          "url": "https://linux.do/t/topic/2955324",
+          "publisher": "LINUX DO；主要采用Eeevan的17楼写作体验",
+          "date": "2026-09-26",
+          "access": "正文已读",
+          "source_type": "中文原始创作体验讨论",
+          "independence_key": "linux.do:2955324:Eeevan",
+          "observed_patterns": [
+            "GMR-P03：对Gemini-3.8-Flash的创作评价明确提到人物情绪和描写反复加码；认为创造性好，但节奏和修辞容易过火"
+          ],
+          "limitations": "没有原始小说段落和预设，不把用户评价转写成具体台词。只归到3.8 Flash的创作体验；同帖存在认为段落不重复、偏爱其文笔的反例，不能把这一审美偏好写成能力定论。",
+          "used_in_main": true
+        },
+        {
+          "id": "GMR-S13",
+          "title": "通过system prompt优化大模型聊天语气/格式的讨论",
+          "url": "https://linux.do/t/topic/2719886?tl=zh_CN",
+          "publisher": "LINUX DO；keepclassy",
+          "date": "2026-08-07",
+          "access": "正文已读",
+          "source_type": "中文用户原始长期体验与调整记录",
+          "independence_key": "linux.do:2719886:keepclassy",
+          "observed_patterns": [
+            "GMR-P05：以品宣工作者身份描述Gemini常大量使用分点、序号、表格和标题，希望改成自然聊天段落"
+          ],
+          "limitations": "未注明具体Gemini版本或入口，同时讨论GPT；本次仅使用明确点名Gemini的正文观察。后附禁用句与提示是用户希望约束的目标，不当成逐句实测记录。",
+          "used_in_main": false
+        },
+        {
+          "id": "GMR-S14",
+          "title": "为什么用antigravity的人不多？——70楼语言风格体验",
+          "url": "https://linux.do/t/topic/2796819?page=4&tl=en",
+          "publisher": "LINUX DO；PositionZero（星塔旅人）",
+          "date": "2026-08-24",
+          "access": "正文已读",
+          "source_type": "中文用户原始使用归纳",
+          "independence_key": "linux.do:2796819:PositionZero",
+          "observed_patterns": [
+            "GMR-P01：明确列出程度副词的使用倾向",
+            "GMR-P05：小标题后附括号英文是该用户指出的格式习惯"
+          ],
+          "limitations": "本楼上下文明确讨论Antigravity中的3.7 Flash，但语言风格段落用了泛称Gemini，不能逐词保证只来自该型号。作者同时认为其表达总体比另两家更自然。",
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    },
+    {
+      "model": "Claude",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "中文材料尚未形成可重复的归纳；英文 honest/honestly 留作候选。",
+      "findings": [],
+      "sources": [
+        {
+          "id": "CLAR-S01",
+          "title": "反复使用 honest 的用户反馈",
+          "url": "https://github.com/anthropics/claude-code/issues/74414",
+          "publisher": "GitHub / br3nt",
+          "date": "2026-07-05",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://github.com/anthropics/claude-code/issues/74414",
+          "observed_patterns": [
+            "honest 修饰语"
+          ],
+          "limitations": "Claude Code 2.1.201，后端型号未注明；后续自称Claude的长评论是AI自述，不作为独立证据或机制解释。",
+          "used_in_main": false
+        },
+        {
+          "id": "CLAR-S02",
+          "title": "当 Claude 说我的问题 genuinely interesting",
+          "url": "https://www.linkedin.com/pulse/when-claude-found-me-genuinely-interesting-bob-ponc%C3%A9-socse",
+          "publisher": "LinkedIn / Bob Poncé",
+          "date": "2026-05-20",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://www.linkedin.com/pulse/when-claude-found-me-genuinely-interesting-bob-ponc%C3%A9-socse",
+          "observed_patterns": [
+            "honest/honestly 修饰语",
+            "genuinely 修饰语"
+          ],
+          "limitations": "英文原始对话，先Sonnet 4.6，后切换Opus 4.7；后续重复部分由用户主动追问这些词诱发，不算额外自然复现。不能把英文译成中文惯用词。",
+          "used_in_main": false
+        },
+        {
+          "id": "CLAR-S03",
+          "title": "Fable 5 的中文交流不通畅反馈",
+          "url": "https://linux.do/t/topic/2768607",
+          "publisher": "LINUX DO / jasonzc320 及回帖者",
+          "date": "2026-08-17至2026-08-18",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2768607",
+          "observed_patterns": [
+            "中文术语密集",
+            "表达冗长"
+          ],
+          "limitations": "主帖是科研交流体验；同帖回复合为一条讨论链。不同用户对Opus 4.6、Fable的评价有冲突，未将其合并成固定家族口癖。",
+          "used_in_main": false
+        },
+        {
+          "id": "CLAR-S04",
+          "title": "Claude 修辞重复问题汇编",
+          "url": "https://github.com/anthropics/claude-code/issues/77136",
+          "publisher": "GitHub / pbower",
+          "date": "2026-07-13",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://github.com/anthropics/claude-code/issues/77136",
+          "observed_patterns": [
+            "英文明喻和行话",
+            "对比重述"
+          ],
+          "limitations": "正文明确汇编另一篇Reddit讨论；不与原Reddit帖子重复计数。包含作者使用体验，但各摘录的原始生成日期和版本不完整。",
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    },
+    {
+      "model": "GLM",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "难懂行话有近期反馈，具体词句的独立材料仍不足。",
+      "findings": [],
+      "sources": [
+        {
+          "id": "GLMR-S01",
+          "title": "GLM 5.3 Flash 的难懂用语反馈",
+          "url": "https://linux.do/t/topic/2836781",
+          "publisher": "LINUX DO / zzxzz12345",
+          "date": "2026-08-31",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2836781",
+          "observed_patterns": [
+            "行话和自造缩略"
+          ],
+          "limitations": "主帖截图未逐字转录；同帖回复不作为多份独立材料。英文直译机制是评论者猜测。",
+          "used_in_main": false
+        },
+        {
+          "id": "GLMR-S02",
+          "title": "GLM 5.3 使用反馈，第21帖",
+          "url": "https://linux.do/t/topic/2901073?page=2",
+          "publisher": "LINUX DO / evid_warn",
+          "date": "2026-09-14",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2901073",
+          "observed_patterns": [
+            "行话和自造词"
+          ],
+          "limitations": "只有简短使用评价，缺输出原句；不据此扩出一组具体惯用词。",
+          "used_in_main": false
+        },
+        {
+          "id": "GLMR-S03",
+          "title": "多模型中文表达讨论，第19帖",
+          "url": "https://linux.do/t/topic/2768607",
+          "publisher": "LINUX DO / Maii",
+          "date": "2026-08-18",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2768607",
+          "observed_patterns": [
+            "表达难懂"
+          ],
+          "limitations": "同时谈Qwen 3.8、GLM 5.2/5.3，描述宽泛，没有足以证明同一具体表达结构的原句，作为线索而非第三份直接支持。",
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    },
+    {
+      "model": "Kimi",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "近期材料多谈任务效果，尚不足以归纳代表词句。",
+      "findings": [],
+      "sources": [
+        {
+          "id": "KIMR-S01",
+          "title": "Kimi K3 使用交流，第22帖",
+          "url": "https://linux.do/t/topic/2830358?page=2",
+          "publisher": "LINUX DO / jianhenghu",
+          "date": "2026-08-30",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2830358",
+          "observed_patterns": [
+            "编码交流偶尔话多"
+          ],
+          "limitations": "单个简短评价，未提供对应句式；同帖有自然好读的正面评价。",
+          "used_in_main": false
+        },
+        {
+          "id": "KIMR-S02",
+          "title": "Kimi K3.1 初测",
+          "url": "https://linux.do/t/topic/3067128",
+          "publisher": "LINUX DO / LanceYang",
+          "date": "2026-10-23",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/3067128",
+          "observed_patterns": [
+            "特定前端任务表现"
+          ],
+          "limitations": "主要是任务结果对比，不能从能力评价推导惯用词句。",
+          "used_in_main": false
+        },
+        {
+          "id": "KIMR-S03",
+          "title": "Kimi K2.6 的结构化输出重复问题",
+          "url": "https://github.com/vllm-project/vllm-ascend/issues/17621",
+          "publisher": "GitHub / kuan27285",
+          "date": "2026-09-28",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://github.com/vllm-project/vllm-ascend/issues/17621",
+          "observed_patterns": [
+            "结构化输出循环个案"
+          ],
+          "limitations": "json_schema约束及特定推理环境下的故障；不等于日常聊天习惯。",
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    },
+    {
+      "model": "Qwen",
+      "date": "2026-11-02",
+      "window": {
+        "start": "2026-05-02",
+        "end": "2026-11-02"
+      },
+      "summary": "局部重复故障与笼统评价，尚不足以归纳日常发言习惯。",
+      "findings": [],
+      "sources": [
+        {
+          "id": "QWER-S01",
+          "title": "Qwen3-4B 在算术任务中的重复推理",
+          "url": "https://github.com/QwenLM/Qwen3/issues/1887",
+          "publisher": "GitHub / Aladincz",
+          "date": "2026-08-02",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://github.com/QwenLM/Qwen3/issues/1887",
+          "observed_patterns": [
+            "算术答案格式反复检查"
+          ],
+          "limitations": "本地4B模型与特定量化/推理设置；单一算术任务，不代表Qwen系列对话风格。",
+          "used_in_main": false
+        },
+        {
+          "id": "QWER-S02",
+          "title": "多模型中文表达讨论，第19帖",
+          "url": "https://linux.do/t/topic/2768607",
+          "publisher": "LINUX DO / Maii",
+          "date": "2026-08-18",
+          "access": "正文已读",
+          "source_type": "原始使用反馈",
+          "independence_key": "https://linux.do/t/topic/2768607",
+          "observed_patterns": [
+            "表达难懂"
+          ],
+          "limitations": "Qwen 3.8与GLM合在一句宽泛评价中，缺具体原句。",
+          "used_in_main": false
+        }
+      ],
+      "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+    }
+  ],
+  "counts": {
+    "recent_unique_pages": 71,
+    "main_support_pages": 30,
+    "main_patterns": 8
+  }
+}

@@ -1,0 +1,45 @@
+近半年原材料索引
+2026-05-02 至 2026-11-02
+正文摘要及简短原文；繁体原文保持字形。
+
+CLAR-S01  反复使用 honest 的用户反馈
+2026-07-05 | GitHub / br3nt
+https://github.com/anthropics/claude-code/issues/74414
+材料性质：原始使用反馈
+核读：正文已读
+原文短摘：One honest note
+使用边界：Claude Code 2.1.201，后端型号未注明；后续自称Claude的长评论是AI自述，不作为独立证据或机制解释。
+
+CLAR-S02  当 Claude 说我的问题 genuinely interesting
+2026-05-20 | LinkedIn / Bob Poncé
+https://www.linkedin.com/pulse/when-claude-found-me-genuinely-interesting-bob-ponc%C3%A9-socse
+材料性质：原始使用反馈
+核读：正文已读
+原文短摘：genuinely interesting; Let me break it down honestly.
+使用边界：英文原始对话，先Sonnet 4.6，后切换Opus 4.7；后续重复部分由用户主动追问这些词诱发，不算额外自然复现。不能把英文译成中文惯用词。
+
+CLAR-S03  Fable 5 的中文交流不通畅反馈
+2026-08-17至2026-08-18 | LINUX DO / jasonzc320 及回帖者
+https://linux.do/t/topic/2768607
+材料性质：原始使用反馈
+核读：正文已读
+原文短摘：堆砌一些terms
+使用边界：主帖是科研交流体验；同帖回复合为一条讨论链。不同用户对Opus 4.6、Fable的评价有冲突，未将其合并成固定家族口癖。
+
+CLAR-S04  Claude 修辞重复问题汇编
+2026-07-13 | GitHub / pbower
+https://github.com/anthropics/claude-code/issues/77136
+材料性质：原始使用反馈
+核读：正文已读
+原文短摘：It is not Y. It is X.
+使用边界：正文明确汇编另一篇Reddit讨论；不与原Reddit帖子重复计数。包含作者使用体验，但各摘录的原始生成日期和版本不完整。
+
+待验证模式
+英文回答中的 honest / honestly
+来源：CLAR-S01, CLAR-S02
+原因：两条可明确日期的直接来源；未用旧年度材料或AI生成的评论摘要补数。
+
+未入主表的材料
+旧年的 absolutely right 及无日期截图：不符合本轮时间窗口。
+台湾半年度回顾、仅显示更新日期的文章：回顾所用对话可能发生在5月2日前，缺具体生成日期，未进入当前归纳。
+Reddit口癖征集 1vkbolo：已读正文，页面仅显示2个月前；精确日期核验未成功，留检索线索，不作为严格日期主表第三份证据。

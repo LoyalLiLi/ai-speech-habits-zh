@@ -1,0 +1,58 @@
+{
+  "model": "Kimi",
+  "date": "2026-11-02",
+  "window": {
+    "start": "2026-05-02",
+    "end": "2026-11-02"
+  },
+  "summary": "近期材料多谈任务效果，尚不足以归纳代表词句。",
+  "findings": [],
+  "sources": [
+    {
+      "id": "KIMR-S01",
+      "title": "Kimi K3 使用交流，第22帖",
+      "url": "https://linux.do/t/topic/2830358?page=2",
+      "publisher": "LINUX DO / jianhenghu",
+      "date": "2026-08-30",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/2830358",
+      "observed_patterns": [
+        "编码交流偶尔话多"
+      ],
+      "limitations": "单个简短评价，未提供对应句式；同帖有自然好读的正面评价。",
+      "used_in_main": false
+    },
+    {
+      "id": "KIMR-S02",
+      "title": "Kimi K3.1 初测",
+      "url": "https://linux.do/t/topic/3067128",
+      "publisher": "LINUX DO / LanceYang",
+      "date": "2026-10-23",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/3067128",
+      "observed_patterns": [
+        "特定前端任务表现"
+      ],
+      "limitations": "主要是任务结果对比，不能从能力评价推导惯用词句。",
+      "used_in_main": false
+    },
+    {
+      "id": "KIMR-S03",
+      "title": "Kimi K2.6 的结构化输出重复问题",
+      "url": "https://github.com/vllm-project/vllm-ascend/issues/17621",
+      "publisher": "GitHub / kuan27285",
+      "date": "2026-09-28",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://github.com/vllm-project/vllm-ascend/issues/17621",
+      "observed_patterns": [
+        "结构化输出循环个案"
+      ],
+      "limitations": "json_schema约束及特定推理环境下的故障；不等于日常聊天习惯。",
+      "used_in_main": false
+    }
+  ],
+  "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+}

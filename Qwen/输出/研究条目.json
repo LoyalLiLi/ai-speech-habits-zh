@@ -1,0 +1,43 @@
+{
+  "model": "Qwen",
+  "date": "2026-11-02",
+  "window": {
+    "start": "2026-05-02",
+    "end": "2026-11-02"
+  },
+  "summary": "局部重复故障与笼统评价，尚不足以归纳日常发言习惯。",
+  "findings": [],
+  "sources": [
+    {
+      "id": "QWER-S01",
+      "title": "Qwen3-4B 在算术任务中的重复推理",
+      "url": "https://github.com/QwenLM/Qwen3/issues/1887",
+      "publisher": "GitHub / Aladincz",
+      "date": "2026-08-02",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://github.com/QwenLM/Qwen3/issues/1887",
+      "observed_patterns": [
+        "算术答案格式反复检查"
+      ],
+      "limitations": "本地4B模型与特定量化/推理设置；单一算术任务，不代表Qwen系列对话风格。",
+      "used_in_main": false
+    },
+    {
+      "id": "QWER-S02",
+      "title": "多模型中文表达讨论，第19帖",
+      "url": "https://linux.do/t/topic/2768607",
+      "publisher": "LINUX DO / Maii",
+      "date": "2026-08-18",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/2768607",
+      "observed_patterns": [
+        "表达难懂"
+      ],
+      "limitations": "Qwen 3.8与GLM合在一句宽泛评价中，缺具体原句。",
+      "used_in_main": false
+    }
+  ],
+  "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+}

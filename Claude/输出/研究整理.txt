@@ -1,0 +1,31 @@
+Claude  近半年发言习惯
+范围：2026-05-02 至 2026-11-02
+中文材料尚未形成可重复的归纳；英文 honest/honestly 留作候选。
+
+本轮暂不列代表词汇或句式。已读近期资料和未采用理由见源材料/网络来源索引.txt。
+
+本轮近期来源（未列为主表依据的只保留为背景/待验证）
+
+CLAR-S01 反复使用 honest 的用户反馈
+2026-07-05 | GitHub / br3nt
+https://github.com/anthropics/claude-code/issues/74414
+是否主表依据：否
+Claude Code 2.1.201，后端型号未注明；后续自称Claude的长评论是AI自述，不作为独立证据或机制解释。
+
+CLAR-S02 当 Claude 说我的问题 genuinely interesting
+2026-05-20 | LinkedIn / Bob Poncé
+https://www.linkedin.com/pulse/when-claude-found-me-genuinely-interesting-bob-ponc%C3%A9-socse
+是否主表依据：否
+英文原始对话，先Sonnet 4.6，后切换Opus 4.7；后续重复部分由用户主动追问这些词诱发，不算额外自然复现。不能把英文译成中文惯用词。
+
+CLAR-S03 Fable 5 的中文交流不通畅反馈
+2026-08-17至2026-08-18 | LINUX DO / jasonzc320 及回帖者
+https://linux.do/t/topic/2768607
+是否主表依据：否
+主帖是科研交流体验；同帖回复合为一条讨论链。不同用户对Opus 4.6、Fable的评价有冲突，未将其合并成固定家族口癖。
+
+CLAR-S04 Claude 修辞重复问题汇编
+2026-07-13 | GitHub / pbower
+https://github.com/anthropics/claude-code/issues/77136
+是否主表依据：否
+正文明确汇编另一篇Reddit讨论；不与原Reddit帖子重复计数。包含作者使用体验，但各摘录的原始生成日期和版本不完整。

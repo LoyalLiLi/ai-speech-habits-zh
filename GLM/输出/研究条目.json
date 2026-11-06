@@ -1,0 +1,58 @@
+{
+  "model": "GLM",
+  "date": "2026-11-02",
+  "window": {
+    "start": "2026-05-02",
+    "end": "2026-11-02"
+  },
+  "summary": "难懂行话有近期反馈，具体词句的独立材料仍不足。",
+  "findings": [],
+  "sources": [
+    {
+      "id": "GLMR-S01",
+      "title": "GLM 5.3 Flash 的难懂用语反馈",
+      "url": "https://linux.do/t/topic/2836781",
+      "publisher": "LINUX DO / zzxzz12345",
+      "date": "2026-08-31",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/2836781",
+      "observed_patterns": [
+        "行话和自造缩略"
+      ],
+      "limitations": "主帖截图未逐字转录；同帖回复不作为多份独立材料。英文直译机制是评论者猜测。",
+      "used_in_main": false
+    },
+    {
+      "id": "GLMR-S02",
+      "title": "GLM 5.3 使用反馈，第21帖",
+      "url": "https://linux.do/t/topic/2901073?page=2",
+      "publisher": "LINUX DO / evid_warn",
+      "date": "2026-09-14",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/2901073",
+      "observed_patterns": [
+        "行话和自造词"
+      ],
+      "limitations": "只有简短使用评价，缺输出原句；不据此扩出一组具体惯用词。",
+      "used_in_main": false
+    },
+    {
+      "id": "GLMR-S03",
+      "title": "多模型中文表达讨论，第19帖",
+      "url": "https://linux.do/t/topic/2768607",
+      "publisher": "LINUX DO / Maii",
+      "date": "2026-08-18",
+      "access": "正文已读",
+      "source_type": "原始使用反馈",
+      "independence_key": "https://linux.do/t/topic/2768607",
+      "observed_patterns": [
+        "表达难懂"
+      ],
+      "limitations": "同时谈Qwen 3.8、GLM 5.2/5.3，描述宽泛，没有足以证明同一具体表达结构的原句，作为线索而非第三份直接支持。",
+      "used_in_main": false
+    }
+  ],
+  "local_materials_note": "原有图片没有可靠会话日期，不参与近半年归纳。"
+}

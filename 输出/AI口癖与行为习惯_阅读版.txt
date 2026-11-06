@@ -1,0 +1,179 @@
+这些 AI 最近怎样说话  阅读版
+2026年5月2日至11月2日 · 近期资料归纳
+整理日期：2026-11-02
+
+这份阅读版只看2026年5月2日至11月2日的资料。本轮读入71个近期网页，主文留下8项有多份独立材料支持的共同模式。
+这次重点补读了chatgpt吧和deepseek吧的原帖。正文写反复出现的表达方式；具体用词出自模型转录、用户回忆还是对照材料，可在详细版查到。
+
+
+GPT  每说完一句，还要把话收窄一点
+用户点名的那组说法：但需要指出 / 并不意味着 / 不能证明
+
+结论已经给了，后面还要补一句：这不代表什么，还不能据此推出什么。你指出的那组表达，抓住的正是这种感觉。近一个月的贴吧和技术社区反馈里，有人直接点名“不能证明”“不代表”“不能据此认为”；也有人只是想让GPT整理自己的观点，却发现成稿隔几段就多出一层限定。
+
+这类话让人印象深的地方，是出现得太密。讨论一个问题，先讲成立的条件，再讲例外，再提醒另一面；用户提出过的限制，也可能被反复重申。读到后面，结论还在，语气却一层层收了回去。
+
+另一种熟悉的句架是“不是……而是……”。先把一种理解推开，再递上另一种解释。开发问答、报告反馈和角色纠正的材料都能见到它，有的确实在回应纠正，有的则成了反复使用的讲解方式。
+
+排版也很有辨识度：回答常被拆成分点、小标题和许多短段。查代码或找报告要点时方便跳读，连续读一段论述时，却容易被一再起头的标题打断。
+
+
+
+
+DeepSeek  否定转折，写作里的碎短句
+不是……而是…… / 不是……是……
+
+“不是……而是……”仍然是这批DeepSeek资料里最反复出现的句式。小说描写、长对话和陪伴聊天中都能见到：先否定一层，再把下一层意思抬出来；有时连“而”字都省了，直接变成“不是……是……”。有用户专门纠正这副句架，接下来的解释又用了它。
+
+贴吧补进来的另一组材料，说的是写作里的碎短句。完整的描写被切成几个很短的片段，一个句号收一次，有时每句还单独成段。7月一位作者用“冰饮料。5元。刚买的。”来形容这种写法，6月的故事转录里也能看到连续断句。篇幅可以很长，句子却一直很碎。
+
+碎短句的材料主要来自小说和故事写作。有人通过调整要求改善了句长，8月也有用户觉得新版本的表达更自然。这些变化与原帖一起留下，方便对照不同场景和版本。
+
+
+
+
+Gemini  普通问题，也能得到很热烈的回应
+“你这个问题极其精彩！”——用户转述的开场
+
+Gemini在这批材料里最鲜明的特点，是进入正题之前先给一个高评价。问题问得好，观察很敏锐，方案很出色，然后才开始逐项解释。5月的方案截图、6月的文档学习体验和9月的网页使用反馈，都能看到这个顺序。
+
+热烈的语气还会延伸到正文。讲解中加入夸张动作，提示问题时连用感叹号，创作时把人物情绪一层层加重。不同场景的用户都提到文字用力过满，也有人在同一时期觉得语气已经变克制。读这些材料，更适合观察语气怎样变化，不必替它编一张固定的人格卡。
+
+还有一类重复的回复顺序：先认同或道歉，再调整原先的解释。算术确认、只发问号和补充链接的案例都有这个形态。不过，补充链接本来就可能带来新信息；这些例子能说明改口时怎么说话，不能全算成无条件附和。
+
+
+
+
+Claude  中文代表词句暂留空
+已有线索，尚未进入主表
+
+近期中文资料里能看到对术语密集、句子难懂的抱怨，但目前还凑不成有足够独立支持的具体句式。英文的honest、honestly有两份日期明确的使用材料，留在候选中；直接把它们翻译成“老实说”再当中文口癖，会多走一步。台湾回顾文章中未标日期的旧对话也已剔除。
+
+
+
+
+GLM  有用语反馈，还缺可对照的句子
+当前代表词句暂空
+
+8月至9月有用户抱怨GLM 5.3系列行话多、会造难懂的词。这些反馈值得继续追，但具体词句的直接材料仍不足。宽泛的“不说人话”评价，没有被扩写成一整张口癖表。
+
+
+
+
+Kimi  近期讨论多谈任务效果
+当前代表词句暂空
+
+这一轮找到的Kimi资料，多在比较编程结果、交流是否自然，或报告结构化输出中的重复故障。它们还不足以回答“哪些话反复说”。因此这部分只保留来源，没有从一两次故障推成日常发言习惯。
+
+
+
+
+Qwen  局部故障，先留在原材料
+当前代表词句暂空
+
+近期能核对的材料包括小模型在算术任务中的重复推理，以及几条中文难懂的评价。前者受模型大小和推理设置影响，后者缺具体句子。本轮没有据此给整个Qwen系列列代表词汇。
+
+
+
+
+
+
+
+资料出处
+正文依据本轮近期资料归纳；下列链接按模型对应。完整版本、核验范围及其余条目见“总览.html”或各模型“研究整理.txt”。
+
+GPT
+· 让GPT6更加工程化的AGENTS.md分享（LINUX DO / g1331）
+https://linux.do/t/topic/3005257
+· 为啥gpt回复理中客味那么冲？（百度贴吧 chatgpt吧 / 死死死咸鱼😞；回复：纨缘深腕徳）
+https://tieba.baidu.com/p/11153182230
+· 感觉大肥鱼的语言风格在AI界也是独一份的雷霆的（第4楼GPT用语反馈）（百度贴吧 deepseek吧 / 鸡煲启动特别快；楼主StGamez）
+https://tieba.baidu.com/p/11150933012
+· Codex 最近好像喜欢很喜欢钻牛角尖（V2EX / sickworm）
+https://v2ex.com/t/1252054
+· gpt的肯定人格（百度贴吧·chatgpt吧 / 第13、14、15、18、25楼的使用者反馈）
+https://tieba.baidu.com/p/11101841266
+· 刚才跟gpt聊了一下，感觉不比豆包强多少（百度贴吧·chatgpt吧 / 凌空6º评论下草🍀🌿🌵🌴🌳🌱、Coren等）
+https://tieba.baidu.com/p/11153595103
+· 我的 GPT 5.5 怎么和你们的不一样？（V2EX / w568w）
+https://www.v2ex.com/t/1218023
+· 我的GPT Pro被降智了吗？（LINUX DO / xiaomoyi）
+https://linux.do/t/topic/2849835
+· 血压有点高（V2EX / hslr44）
+https://www.v2ex.com/t/1247841
+· 佬友们求问chatgpt的中文写作怎么样子（LINUX DO / strram 发帖；NextVic 等回复）
+https://linux.do/t/topic/2136220
+· GPT网页端疑似在灰测新模型与新输出格式（仅限Chat，开始high模式）（LINUX DO / 1347097818zs（Chiney））
+https://linux.do/t/topic/2935260
+
+DeepSeek
+· deepseek v4 的写作能力如何？（第 14 楼）（LINUX DO / yeluo001）
+https://linux.do/t/topic/2160326/14
+· deepseek v4 中转和官方，什么区别官方有什么活动？（第 8 楼）（LINUX DO / Zephyrian）
+https://linux.do/t/topic/2313392/8
+· 华为：将在 WAIC 2026 上首次展出业界最大规模超节点 Atlas 950 SuperPoD 真机（第 8 楼的 V4 写作反馈）（LINUX DO / yoronyo）
+https://linux.do/t/topic/2466536/8
+· deepseek4全家对「不是而是」的句型已经达到了癫狂的地步了吗 在反思自己不该用的时候还在用 我再也忍不了（LINUX DO / StellaFortuna）
+https://linux.do/t/topic/2686094
+· deepseek写作时意义不明的句式/词汇/手法一览（百度贴吧 deepseek吧 / 萨尼铁塔los）
+https://tieba.baidu.com/p/10825849819
+· 有时变得干巴巴空荡荡高度重复而且带很多短句（百度贴吧 deepseek吧 / 末影xr）
+https://tieba.baidu.com/p/10788128577
+· 我觉得用v4.1写文的应该活用它非常听话的特点（百度贴吧 deepseek吧 / 11_314）
+https://tieba.baidu.com/p/11016027832
+· 请问大佬们有无活人感比较强符合现在能整出各种活的ds人设词嘛（百度贴吧 deepseek吧 / 爱丽丝ちゃん）
+https://tieba.baidu.com/p/10971902254
+· 现在DS变得太娘了，车轱辘问题特别严重，油腻又谄媚，服了（百度贴吧 deepseek吧 / 飞学飘凌）
+https://tieba.baidu.com/p/10862698265
+· 小D的风格真的很明朗（百度贴吧 deepseek吧 / 哈25426）
+https://tieba.baidu.com/p/10798291330
+· 现在的语言描写风格好别扭（百度贴吧 deepseek吧 / Nitchs_）
+https://tieba.baidu.com/p/10851982348
+· deepseek写作怎么变成这个样了（百度贴吧 deepseek吧 / 布莱克.克里斯）
+https://tieba.baidu.com/p/10911059211
+· deepseek-v4-flash-0731出来一周了，好像没有看到口癖（LINUX DO / yunxin0_0；第 3 楼 yb3712590）
+https://linux.do/t/topic/2718344
+
+Gemini
+· Gemini 3.5这么谄媚？我被吓到了（LINUX DO；SWEETENING）
+https://linux.do/t/topic/2213278?tl=zh_CN
+· 求一个让gemini不那么亢奋的提示词😭（LINUX DO；_sama（哦呜啊））
+https://linux.do/t/topic/2286327
+· gemini网页里的gemini说话谄媚味道严重（LINUX DO；Fange（繁歌））
+https://linux.do/t/topic/2957161?tl=en
+· AntiGravity的Gemini3.8Flash下午效果极好，疑似已路由到Gemini4（LINUX DO；ANG.eth、newbieplf）
+https://linux.do/t/topic/2982576?tl=en
+· grok 4.7/gemini 3.8/opus5.5哪个写小说好使？（LINUX DO；主要采用Eeevan的17楼写作体验）
+https://linux.do/t/topic/2955324
+· 300+140=460？（LINUX DO / 第18帖 hg9797）
+https://linux.do/t/topic/2229732
+· 给豆包扣三个问号,就能触发左右脑互搏?——10楼Gemini截图（LINUX DO；cong（聪聪））
+https://linux.do/t/topic/2193068/10
+· gemini 是不是也有点降智了？（LINUX DO；s173（Sienna Smith））
+https://linux.do/t/topic/2527200?tl=zh_CN
+
+Claude
+· 反复使用 honest 的用户反馈（GitHub / br3nt）
+https://github.com/anthropics/claude-code/issues/74414
+· 当 Claude 说我的问题 genuinely interesting（LinkedIn / Bob Poncé）
+https://www.linkedin.com/pulse/when-claude-found-me-genuinely-interesting-bob-ponc%C3%A9-socse
+· Fable 5 的中文交流不通畅反馈（LINUX DO / jasonzc320 及回帖者）
+https://linux.do/t/topic/2768607
+
+GLM
+· GLM 5.3 Flash 的难懂用语反馈（LINUX DO / zzxzz12345）
+https://linux.do/t/topic/2836781
+· GLM 5.3 使用反馈，第21帖（LINUX DO / evid_warn）
+https://linux.do/t/topic/2901073?page=2
+
+Kimi
+· Kimi K3 使用交流，第22帖（LINUX DO / jianhenghu）
+https://linux.do/t/topic/2830358?page=2
+· Kimi K2.6 的结构化输出重复问题（GitHub / kuan27285）
+https://github.com/vllm-project/vllm-ascend/issues/17621
+
+Qwen
+· Qwen3-4B 在算术任务中的重复推理（GitHub / Aladincz）
+https://github.com/QwenLM/Qwen3/issues/1887
+· 多模型中文表达讨论，第19帖（LINUX DO / Maii）
+https://linux.do/t/topic/2768607
