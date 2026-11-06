@@ -1,0 +1,27 @@
+# Local research copies, snapshots and personal notes
+历史版本/
+封号小故事/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.bmp
+*.heic
+*.zip
+*.7z
+# Local files and credentials
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
